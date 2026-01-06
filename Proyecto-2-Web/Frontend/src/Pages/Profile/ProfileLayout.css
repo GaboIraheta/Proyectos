@@ -1,0 +1,226 @@
+.profileContainer {
+  background-color: var(--primary-50);
+  display: flex;
+  padding: 0 0 87px;
+  flex-direction: column;
+  overflow: hidden;
+  align-items: center;
+  height: 90vh; /*100vh*/
+  overflow: auto;
+}
+
+.navigationHeader {
+  background: #2e415e;
+  width: 100%;
+  display: flex;
+  gap: 20px;
+  justify-content: space-between;
+  padding: 16px 63px;
+  font: 400 20px Raleway, sans-serif;
+}
+
+.logo {
+  aspect-ratio: 0.8;
+  object-fit: contain;
+  width: 40px;
+}
+
+.navActions {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+.navIcon {
+  aspect-ratio: 1;
+  object-fit: contain;
+  width: 40px;
+}
+
+.userAvatar {
+  background: #f1f6fc;
+  border-radius: 50%;
+  width: 55px;
+  height: 55px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.userIcon {
+  width: 40px;
+  height: 40px;
+}
+
+.profileHeader {
+  border-radius: 10px;
+  background: #2e415e;
+  width: 100%;
+  max-width: 1360px;
+  margin-top: 24px;
+  padding-bottom: 24px;
+
+}
+
+.headerBackground {
+  border-radius: 0;
+  background: #e1f0e3;
+  height: 153px;
+  margin-top: -5px;
+  
+}
+
+
+.headerContent {
+  width: 100%;
+  max-width: 1156px;
+  margin: 0 auto;
+  align-items: center;
+  transition: all 0.3s ease-in-out;
+  
+}
+
+.headerContent:hover {
+  box-shadow: 0 6px 10px rgba(144, 238, 144, 0.4), 0 0 12px rgba(144, 238, 144, 0.3); 
+  background: linear-gradient(135deg, #3b5a71, #2e415e); 
+}
+
+.changePhotoButton {
+  border-radius: 6px;
+  border: 1px solid #f1f6fc;
+  color: #f1f6fc;
+  padding: 7px 16px;
+  font: 12px Inter, sans-serif;
+  margin: 68px 0 0 auto;
+}
+
+.mainContent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  max-width: 1360px;
+}
+
+.cardsSection {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.cardsGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  width: 100%;
+  max-width: 1100px;
+  margin-top: 30px;
+}
+
+.progressSection {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 50px;
+  width: 100%;
+}
+
+.progressTitle {
+  color: #000;
+  font: 400 25px Raleway, sans-serif;
+}
+
+.progressChart {
+  margin-top: 24px;
+  width: 200px;
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.CircularProgressbar-text {
+  font-family: "Raleway";
+}
+
+.headerContent h2 {
+  color: #ffffff;
+  font-size: 24px;
+  font-weight: 400;
+  text-align: center;
+  font-family: 'Raleway',sans-serif;
+  text-transform: uppercase;
+  font-size: 2.441rem;
+  margin-top: 50px;
+}
+
+@media (max-width: 768px) {
+  
+  
+  
+  .profileContainer {
+    padding: 0 20px;
+  }
+  
+  main {
+    padding: 1em;
+  }
+  
+ 
+  .navigationHeader {
+    flex-direction: column;
+    align-items: center;
+    padding: 16px 20px;
+  }
+
+  .logo {
+    width: 30px;
+  }
+
+  .navActions {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .navIcon {
+    width: 30px;
+  }
+
+  .userAvatar {
+    width: 45px;
+    height: 45px;
+  }
+
+  .userIcon {
+    width: 35px;
+    height: 35px;
+  }
+    .cardsGrid {
+      grid-template-columns: 1fr; 
+    }
+  
+    .progressSection {
+      margin-top: 20px;
+    }
+  
+}
+
+@media (max-width: 480px) {
+  .profileHeader .headerContent h2 {
+    font-size: 1.5rem;
+  }
+
+  .cardsGrid {
+    grid-template-columns: 1fr; 
+  }
+
+  .progressWrapper {
+    width: 70px;
+    height: 70px;
+  }
+}
+
+
+
+

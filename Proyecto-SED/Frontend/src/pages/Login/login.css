@@ -1,0 +1,111 @@
+/* --- Página de login --- */
+.login {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 80vh;
+  background: linear-gradient(135deg, #f6faf7, #eaf5ed);
+}
+
+.login-container {
+  background-color: #fff;
+  padding: 2.5rem 3rem;
+  border-radius: 16px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  width: 100%;
+  max-width: 400px;
+  text-align: center;
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+.login-title {
+  font-size: 1.8rem;
+  color: #2e8b57;
+  margin-bottom: 0.5rem;
+}
+
+.login-subtitle {
+  font-size: 1rem;
+  color: #555;
+  margin-bottom: 2rem;
+}
+
+.login-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+  text-align: left;
+}
+
+.login-field label {
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 0.4rem;
+  display: block;
+}
+
+.login-field input {
+  width: 100%;
+  padding: 0.8rem;
+  border: 1.5px solid #cdd9ce;
+  border-radius: 8px;
+  font-size: 1rem;
+  transition: border-color 0.2s ease-in-out;
+}
+
+.login-field input:focus {
+  border-color: #2e8b57;
+  outline: none;
+}
+
+.login-btn {
+  background-color: #2e8b57;
+  color: #fff;
+  border: none;
+  padding: 0.9rem;
+  font-size: 1rem;
+  font-weight: 600;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+  margin-top: 0.5rem;
+}
+
+.login-btn:hover {
+  background-color: #256b45;
+}
+
+.login-footer {
+  margin-top: 1.5rem;
+  font-size: 0.95rem;
+  color: #444;
+}
+
+.login-footer a {
+  color: #2e8b57;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.login-footer a:hover {
+  text-decoration: underline;
+}
+
+/* --- Animaciones --- */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.error-message {
+  margin-top: 1rem;
+  color: #e74c3c;
+  font-weight: 600;
+  text-align: center;
+}

@@ -1,0 +1,30 @@
+.Unauthorized {
+    font-family: "Raleway";
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.Unauthorized h1 {
+    font-size: 7em;
+}
+
+.Unauthorized button {
+    margin-top: 1em;
+    background-color: var(--primary-500); 
+    color: white;
+    border: none;
+    border-radius: 20px;
+    padding: 10px 20px;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.Unauthorized button:hover {
+    background-color: var(--secondary-500);
+    color: white;
+}

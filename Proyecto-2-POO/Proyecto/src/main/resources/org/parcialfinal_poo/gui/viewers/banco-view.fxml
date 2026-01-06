@@ -1,0 +1,647 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<TabPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="532.0" prefWidth="730.0" tabClosingPolicy="UNAVAILABLE" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.parcialfinal_poo.gui.controllers.BancoController">
+  <tabs>
+    <Tab closable="false" text="Registro">
+      <content>
+        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+               <children>
+                  <TabPane layoutY="40.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="5.0">
+                     <tabs>
+                        <Tab fx:id="tabCliente" closable="false" text="Clientes">
+                           <content>
+                              <AnchorPane>
+                                 <children>
+                                    <TabPane fx:id="tabPaneClientes" prefHeight="200.0" prefWidth="200.0" tabClosingPolicy="UNAVAILABLE" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="5.0">
+                                      <tabs>
+                                        <Tab closable="false" text="Leer registro">
+                                             <content>
+                                                <AnchorPane prefHeight="200.0" prefWidth="200.0">
+                                                   <children>
+                                                      <HBox alignment="CENTER" layoutX="14.0" layoutY="118.0" prefHeight="311.0" prefWidth="705.0" style="-fx-background-color: #CECECE;" AnchorPane.bottomAnchor="5.0" AnchorPane.leftAnchor="5.0" AnchorPane.rightAnchor="5.0" AnchorPane.topAnchor="10.0">
+                                                         <children>
+                                                            <VBox>
+                                                               <children>
+                                                                  <Label text="ID">
+                                                                     <VBox.margin>
+                                                                        <Insets left="3.0" />
+                                                                     </VBox.margin>
+                                                                  </Label>
+                                                                  <ListView fx:id="lvClienteID" prefHeight="200.0" prefWidth="50.0" style="-fx-border-color: #FFFFFF;" VBox.vgrow="ALWAYS" />
+                                                               </children>
+                                                               <HBox.margin>
+                                                                  <Insets />
+                                                               </HBox.margin>
+                                                            </VBox>
+                                                            <VBox layoutX="345.0" layoutY="10.0" HBox.hgrow="ALWAYS">
+                                                               <children>
+                                                                  <Label text="Apellidos">
+                                                                     <VBox.margin>
+                                                                        <Insets left="3.0" />
+                                                                     </VBox.margin>
+                                                                  </Label>
+                                                                  <ListView fx:id="lvClienteApellidos" prefHeight="200.0" prefWidth="50.0" style="-fx-border-color: #FFFFFF;" VBox.vgrow="ALWAYS" />
+                                                               </children>
+                                                            </VBox>
+                                                            <VBox layoutX="370.0" layoutY="10.0" HBox.hgrow="ALWAYS">
+                                                               <children>
+                                                                  <Label text="Nombres">
+                                                                     <VBox.margin>
+                                                                        <Insets left="3.0" />
+                                                                     </VBox.margin>
+                                                                  </Label>
+                                                                  <ListView fx:id="lvClienteNombres" prefHeight="200.0" prefWidth="50.0" style="-fx-border-color: #FFFFFF;" VBox.vgrow="ALWAYS" />
+                                                               </children>
+                                                            </VBox>
+                                                            <VBox layoutX="395.0" layoutY="10.0" HBox.hgrow="ALWAYS">
+                                                               <children>
+                                                                  <Label text="Dirección">
+                                                                     <VBox.margin>
+                                                                        <Insets left="3.0" />
+                                                                     </VBox.margin>
+                                                                  </Label>
+                                                                  <ListView fx:id="lvClienteDireccion" prefHeight="200.0" prefWidth="50.0" style="-fx-border-color: #FFFFFF;" VBox.vgrow="ALWAYS" />
+                                                               </children>
+                                                            </VBox>
+                                                            <VBox layoutX="370.0" layoutY="10.0" HBox.hgrow="ALWAYS">
+                                                               <children>
+                                                                  <Label text="Número telefónico">
+                                                                     <VBox.margin>
+                                                                        <Insets left="3.0" />
+                                                                     </VBox.margin>
+                                                                  </Label>
+                                                                  <ListView fx:id="lvClienteNumTelefono" prefHeight="200.0" prefWidth="50.0" style="-fx-border-color: #FFFFFF;" VBox.vgrow="ALWAYS" />
+                                                               </children>
+                                                            </VBox>
+                                                         </children>
+                                                      </HBox>
+                                                   </children></AnchorPane>
+                                             </content>
+                                          </Tab>
+                                        <Tab closable="false" text="Agregar registro">
+                                             <content>
+                                                <AnchorPane prefHeight="200.0" prefWidth="200.0">
+                                                   <children>
+                                                      <Label layoutX="378.0" layoutY="36.0" text="Agregar Clientes">
+                                                         <font>
+                                                            <Font size="29.0" />
+                                                         </font>
+                                                      </Label>
+                                                      <VBox alignment="TOP_CENTER" layoutX="349.0" layoutY="96.0" prefHeight="274.0" prefWidth="270.0">
+                                                         <children>
+                                                            <Label text="Nombres">
+                                                               <font>
+                                                                  <Font size="18.0" />
+                                                               </font>
+                                                            </Label>
+                                                            <TextField fx:id="tfNames" />
+                                                            <HBox prefHeight="16.0" prefWidth="270.0" />
+                                                            <Label layoutX="131.0" layoutY="10.0" text="Apellidos">
+                                                               <font>
+                                                                  <Font size="18.0" />
+                                                               </font>
+                                                            </Label>
+                                                            <TextField fx:id="tfLastNames" layoutX="10.0" layoutY="27.0" />
+                                                            <HBox layoutX="10.0" layoutY="52.0" prefHeight="16.0" prefWidth="270.0" />
+                                                            <Label layoutX="131.0" layoutY="68.0" text="Dirección">
+                                                               <font>
+                                                                  <Font size="18.0" />
+                                                               </font>
+                                                            </Label>
+                                                            <TextField fx:id="tfAdress" layoutX="10.0" layoutY="85.0" />
+                                                            <HBox layoutX="10.0" layoutY="110.0" prefHeight="16.0" prefWidth="270.0" />
+                                                            <Label layoutX="131.0" layoutY="126.0" text="Número de Teléfono">
+                                                               <font>
+                                                                  <Font size="18.0" />
+                                                               </font>
+                                                            </Label>
+                                                            <TextField fx:id="tfTelephone" layoutX="10.0" layoutY="143.0" promptText="XXXX-XXXX" />
+                                                         </children>
+                                                      </VBox>
+                                                      <Button layoutX="349.0" layoutY="370.0" mnemonicParsing="false" onAction="#insertCustomers" onMouseClicked="#insertCustomers" prefHeight="28.0" prefWidth="119.0" text="Agregar Cliente" />
+                                                      <Button layoutX="500.0" layoutY="370.0" mnemonicParsing="false" onAction="#limpiarClienteTab" prefHeight="28.0" prefWidth="119.0" text="Limpiar" />
+                                                   </children></AnchorPane>
+                                             </content>
+                                          </Tab>
+                                          <Tab fx:id="tabUpdateClientes" closable="false" text="Actualizar registro">
+                                            <content>
+                                              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="400.0" prefWidth="730.0">
+                                                   <children>
+                                                      <VBox prefHeight="438.0" prefWidth="263.0">
+                                                         <children>
+                                                            <AnchorPane prefHeight="446.0" prefWidth="263.0">
+                                                               <children>
+                                                                  <Label layoutX="30.0" layoutY="60.0" text="Seleccione un cliente" />
+                                                                  <TextField fx:id="tfClienteID" layoutX="30.0" layoutY="97.0" promptText="Digite el ID del cliente" AnchorPane.bottomAnchor="315.79999999999995" AnchorPane.leftAnchor="30.0" AnchorPane.rightAnchor="30.0" />
+                                                                  <Button layoutX="74.0" layoutY="193.0" mnemonicParsing="false" onAction="#seleccionarClienteUpdate" text="Selecionar registro" />
+                                                                  <Label fx:id="campoObligatorioUpdateCliente1" layoutX="132.0" layoutY="135.0" text="Campo obligatorio" textFill="RED" />
+                                                               </children>
+                                                            </AnchorPane>
+                                                         </children>
+                                                      </VBox>
+                                                      <VBox layoutX="263.0" prefHeight="435.0" prefWidth="468.0">
+                                                         <children>
+                                                            <AnchorPane prefHeight="436.0" prefWidth="468.0">
+                                                               <children>
+                                                                  <Label layoutX="48.0" layoutY="56.0" text="Nombres" />
+                                                                  <TextField fx:id="tfNombresCliente" layoutX="48.0" layoutY="96.0" />
+                                                                  <Label layoutX="48.0" layoutY="173.0" text="Apellidos" />
+                                                                  <TextField fx:id="tfApellidosClientes" layoutX="48.0" layoutY="218.0" />
+                                                                  <Label layoutX="255.0" layoutY="56.0" text="Direccion" />
+                                                                  <TextField fx:id="tfDireccionClientes" layoutX="255.0" layoutY="96.0" />
+                                                                  <Label layoutX="251.0" layoutY="173.0" text="Numero de telefono" />
+                                                                  <TextField fx:id="tfTelefonoClientes" layoutX="255.0" layoutY="218.0" />
+                                                                  <Label fx:id="campoObligatorioUpdateCliente2" layoutX="98.0" layoutY="130.0" text="Campo obligatorio" textFill="RED" />
+                                                                  <Label fx:id="campoObligatorioUpdateCliente3" layoutX="309.0" layoutY="130.0" text="Campo obligatorio" textFill="RED" />
+                                                                  <Label fx:id="campoObligatorioUpdateCliente4" layoutX="98.0" layoutY="250.0" text="Campo obligatorio" textFill="RED" />
+                                                                  <Label fx:id="campoObligatorioUpdateCliente5" layoutX="309.0" layoutY="250.0" text="Campo obligatorio" textFill="RED" />
+                                                                  <Button fx:id="btnActualizarRegistroCliente" layoutX="178.0" layoutY="318.0" mnemonicParsing="false" onAction="#actualizarRegistroCliente" text="Actualizar registro" />
+                                                               </children>
+                                                            </AnchorPane>
+                                                         </children>
+                                                      </VBox>
+                                                   </children></AnchorPane>
+                                            </content>
+                                          </Tab>
+                                          <Tab closable="false" text="Eliminar registro">
+                                            <content>
+                                              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                                                   <children>
+                                                      <Text layoutX="14.0" layoutY="36.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ID del cliente" wrappingWidth="86.76171875" />
+                                                      <TextField fx:id="txtIdClienteEliminar" layoutX="14.0" layoutY="47.0" />
+                                                      <Button fx:id="btnEliminarCliente" layoutX="173.0" layoutY="47.0" mnemonicParsing="false" onAction="#eliminarCliente" text="Eliminar" />
+                                                   </children></AnchorPane>
+                                            </content>
+                                          </Tab>
+                                      </tabs>
+                                    </TabPane>
+                                 </children>
+                              </AnchorPane>
+                           </content>
+                        </Tab>
+                        <Tab fx:id="tabTarjeta" closable="false" text="Tarjetas">
+                           <content>
+                              <AnchorPane>
+                                 <children>
+                                    <TabPane fx:id="tabPaneTarjetas" prefHeight="200.0" prefWidth="200.0" tabClosingPolicy="UNAVAILABLE" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="5.0">
+                                       <tabs>
+                                          <Tab closable="false" text="Leer registro">
+                                             <content>
+                                                <AnchorPane prefHeight="200.0" prefWidth="200.0">
+                                                   <children>
+                                                      <HBox alignment="CENTER" prefHeight="311.0" prefWidth="705.0" style="-fx-background-color: #CECECE;" AnchorPane.bottomAnchor="5.0" AnchorPane.leftAnchor="5.0" AnchorPane.rightAnchor="5.0" AnchorPane.topAnchor="10.0">
+                                                         <children>
+                                                            <VBox>
+                                                               <children>
+                                                                  <Label text="ID">
+                                                                     <VBox.margin>
+                                                                        <Insets left="3.0" />
+                                                                     </VBox.margin>
+                                                                  </Label>
+                                                                  <ListView fx:id="lvTarjetaID" prefHeight="200.0" prefWidth="50.0" style="-fx-border-color: #FFFFFF;" VBox.vgrow="ALWAYS" />
+                                                               </children>
+                                                               <HBox.margin>
+                                                                  <Insets />
+                                                               </HBox.margin>
+                                                            </VBox>
+                                                            <VBox layoutX="345.0" layoutY="10.0" HBox.hgrow="ALWAYS">
+                                                               <children>
+                                                                  <Label text="Cliente ID">
+                                                                     <VBox.margin>
+                                                                        <Insets left="3.0" />
+                                                                     </VBox.margin>
+                                                                  </Label>
+                                                                  <ListView fx:id="lvTarjetaClienteID" prefHeight="200.0" prefWidth="50.0" style="-fx-border-color: #FFFFFF;" VBox.vgrow="ALWAYS" />
+                                                               </children>
+                                                            </VBox>
+                                                            <VBox layoutX="370.0" layoutY="10.0" maxWidth="300.0" prefWidth="250.0">
+                                                               <children>
+                                                                  <Label text="Número de tarjeta">
+                                                                     <VBox.margin>
+                                                                        <Insets left="3.0" />
+                                                                     </VBox.margin>
+                                                                  </Label>
+                                                                  <ListView fx:id="lvTarjetaNum" maxWidth="400.0" minWidth="200.0" prefWidth="350.0" style="-fx-border-color: #FFFFFF;" />
+                                                               </children>
+                                                            </VBox>
+                                                            <VBox layoutX="395.0" layoutY="10.0" HBox.hgrow="ALWAYS">
+                                                               <children>
+                                                                  <Label text="Fecha de expiración">
+                                                                     <VBox.margin>
+                                                                        <Insets left="3.0" />
+                                                                     </VBox.margin>
+                                                                  </Label>
+                                                                  <ListView fx:id="lvTarjetaFechaExp" prefHeight="200.0" prefWidth="50.0" style="-fx-border-color: #FFFFFF;" VBox.vgrow="ALWAYS" />
+                                                               </children>
+                                                            </VBox>
+                                                            <VBox layoutX="370.0" layoutY="10.0" HBox.hgrow="ALWAYS">
+                                                               <children>
+                                                                  <Label text="Facilitador">
+                                                                     <VBox.margin>
+                                                                        <Insets left="3.0" />
+                                                                     </VBox.margin>
+                                                                  </Label>
+                                                                  <ListView fx:id="lvTarjetaFacilitador" prefHeight="200.0" prefWidth="50.0" style="-fx-border-color: #FFFFFF;" VBox.vgrow="ALWAYS" />
+                                                               </children>
+                                                            </VBox>
+                                                            <VBox layoutX="525.0" layoutY="10.0" HBox.hgrow="ALWAYS">
+                                                               <children>
+                                                                  <Label text="Tipo de tarjeta">
+                                                                     <VBox.margin>
+                                                                        <Insets left="3.0" />
+                                                                     </VBox.margin>
+                                                                  </Label>
+                                                                  <ListView fx:id="lvTarjetaTipo" prefHeight="200.0" prefWidth="50.0" style="-fx-border-color: #FFFFFF;" VBox.vgrow="ALWAYS" />
+                                                               </children>
+                                                            </VBox>
+                                                         </children>
+                                                      </HBox>
+                                                   </children></AnchorPane>
+                                             </content></Tab>
+                                          <Tab closable="false" onSelectionChanged="#initializeCardTab" text="Agregar registro">
+                                             <content>
+                                                <AnchorPane prefHeight="200.0" prefWidth="200.0">
+                                                   <children>
+                                                      <Label layoutX="402.0" layoutY="43.0" text="Añadir Tarjetas">
+                                                         <font>
+                                                            <Font size="29.0" />
+                                                         </font>
+                                                      </Label>
+                                                      <VBox alignment="TOP_CENTER" layoutX="182.0" layoutY="110.0" prefHeight="216.0" prefWidth="267.0">
+                                                         <children>
+                                                            <Label text="Dueño de la tarjeta">
+                                                               <font>
+                                                                  <Font size="18.0" />
+                                                               </font>
+                                                            </Label>
+                                                            <ChoiceBox fx:id="cbOwner" prefHeight="25.0" prefWidth="267.0" />
+                                                            <HBox prefHeight="17.0" prefWidth="267.0" />
+                                                            <Label layoutX="68.0" layoutY="10.0" text="Número de la tarjeta">
+                                                               <font>
+                                                                  <Font size="18.0" />
+                                                               </font>
+                                                            </Label>
+                                                            <TextField fx:id="tfCardNum" prefHeight="25.0" prefWidth="230.0" promptText="XXXX XXXX XXXX XXXX" />
+                                                            <HBox layoutX="10.0" layoutY="62.0" prefHeight="17.0" prefWidth="267.0" />
+                                                            <Label layoutX="62.0" layoutY="79.0" text="Fecha de expiración">
+                                                               <font>
+                                                                  <Font size="18.0" />
+                                                               </font>
+                                                            </Label>
+                                                            <DatePicker fx:id="dpExp" prefHeight="25.0" prefWidth="269.0" />
+                                                         </children>
+                                                      </VBox>
+                                                      <VBox alignment="TOP_CENTER" layoutX="525.0" layoutY="110.0" prefHeight="147.0" prefWidth="267.0">
+                                                         <children>
+                                                            <Label text="Facilitador">
+                                                               <font>
+                                                                  <Font size="18.0" />
+                                                               </font>
+                                                            </Label>
+                                                            <ChoiceBox fx:id="cbProvider" prefHeight="25.0" prefWidth="267.0" />
+                                                            <HBox prefHeight="17.0" prefWidth="267.0" />
+                                                            <Label layoutX="68.0" layoutY="10.0" text="Tipo de tarjeta">
+                                                               <font>
+                                                                  <Font size="18.0" />
+                                                               </font>
+                                                            </Label>
+                                                            <ChoiceBox fx:id="cbType" layoutX="10.0" layoutY="37.0" prefHeight="25.0" prefWidth="267.0" />
+                                                            <HBox layoutX="10.0" layoutY="62.0" prefHeight="17.0" prefWidth="267.0" />
+                                                         </children>
+                                                      </VBox>
+                                                      <Button layoutX="525.0" layoutY="275.0" mnemonicParsing="false" onAction="#insertCard" prefHeight="25.0" prefWidth="126.0" text="Agregar Tarjeta" />
+                                                      <Button layoutX="675.0" layoutY="275.0" mnemonicParsing="false" onAction="#limpiarCardTab" prefHeight="25.0" prefWidth="117.0" text="Limpiar" />
+                                                   </children></AnchorPane>
+                                             </content></Tab>
+                                          <Tab fx:id="tabUpdateTarjetas" closable="false" text="Actualizar registro">
+                                             <content>
+                                                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                                                   <children>
+                                                      <VBox prefHeight="440.0" prefWidth="263.0">
+                                                         <children>
+                                                            <AnchorPane prefHeight="457.0" prefWidth="263.0">
+                                                               <children>
+                                                                  <Label layoutX="35.0" layoutY="67.0" text="Seleccione una tarjeta" />
+                                                                  <TextField fx:id="tfTarjetaID" layoutX="35.0" layoutY="107.0" promptText="Ingrese el ID de la tarjeta" AnchorPane.leftAnchor="30.0" AnchorPane.rightAnchor="30.0" />
+                                                                  <Label fx:id="campoObligatorioUpdateTarjeta1" layoutX="133.0" layoutY="141.0" text="Campo obligatorio" textFill="RED" />
+                                                                  <Button layoutX="73.0" layoutY="187.0" mnemonicParsing="false" onAction="#seleccionarRegistroTarjeta" text="Seleccionar registro" />
+                                                               </children>
+                                                            </AnchorPane>
+                                                         </children>
+                                                      </VBox>
+                                                      <VBox layoutX="263.0" prefHeight="434.0" prefWidth="469.0">
+                                                         <children>
+                                                            <AnchorPane prefHeight="437.0" prefWidth="470.0">
+                                                               <children>
+                                                                  <Label layoutX="40.0" layoutY="67.0" text="Numero de tarjeta" />
+                                                                  <TextField fx:id="tfNumeroTarjeta" layoutX="40.0" layoutY="107.0" />
+                                                                  <Label fx:id="campoObligatorioUpdateTarjeta2" layoutX="90.0" layoutY="140.0" text="Campo obligatorio" textFill="RED" />
+                                                                  <Label layoutX="248.0" layoutY="67.0" text="Tipo de tarjeta" />
+                                                                  <ComboBox fx:id="cbTipoTarjeta" layoutX="251.0" layoutY="107.0" prefWidth="150.0" />
+                                                                  <Label fx:id="campoObligatorioUpdateTarjeta3" layoutX="301.0" layoutY="140.0" text="Campo obligatorio" textFill="RED" />
+                                                                  <Label layoutX="38.0" layoutY="184.0" text="Fecha de expiracion" />
+                                                                  <DatePicker fx:id="dpFechaExpiracion" layoutX="39.0" layoutY="219.0" prefHeight="26.0" prefWidth="152.0" />
+                                                                  <Label fx:id="campoObligatorioUpdateTarjeta4" layoutX="95.0" layoutY="251.0" text="Campo obligatorio" textFill="RED" />
+                                                                  <Label layoutX="251.0" layoutY="184.0" text="Facilitador" />
+                                                                  <ComboBox fx:id="cbFacilitador" layoutX="250.0" layoutY="219.0" prefWidth="150.0" />
+                                                                  <Label layoutX="40.0" layoutY="292.0" text="ID del cliente" />
+                                                                  <TextField fx:id="tfIDCliente" layoutX="40.0" layoutY="327.0" />
+                                                                  <Label fx:id="campoObligatorioUpdateTarjeta6" layoutX="95.0" layoutY="359.0" text="Campo obligatorio" textFill="#ff0101" />
+                                                                  <Button fx:id="btnActualizarTarjeta" layoutX="270.0" layoutY="327.0" mnemonicParsing="false" onAction="#updateRegistroTarjeta" text="Actualizar registro" />
+                                                                  <Label fx:id="campoObligatorioUpdateTarjeta5" layoutX="301.0" layoutY="251.0" text="Campo obligatorio" textFill="RED" />
+                                                               </children></AnchorPane>
+                                                         </children>
+                                                      </VBox>
+                                                   </children></AnchorPane>
+                                             </content>
+                                          </Tab>
+                                          <Tab closable="false" text="Eliminar registro">
+                                             <content>
+                                                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                                                   <children>
+                                                      <Text layoutX="14.0" layoutY="43.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ID Tarjeta " />
+                                                      <TextField fx:id="txtIdTarjetaEliminar" layoutX="13.0" layoutY="54.0" prefHeight="18.0" prefWidth="139.0" />
+                                                      <Button fx:id="btnEliminarTarjeta" layoutX="161.0" layoutY="54.0" mnemonicParsing="false" onAction="#eliminarTarjeta" prefHeight="25.0" prefWidth="70.0" text="Eliminar" />
+                                                   </children></AnchorPane>
+                                             </content>
+                                          </Tab>
+                                       </tabs>
+                                    </TabPane>
+                                 </children>
+                              </AnchorPane>
+                           </content>
+                        </Tab>
+                        <Tab fx:id="tabCompra" closable="false" text="Compras">
+                           <content>
+                              <AnchorPane>
+                                 <children>
+                                    <TabPane fx:id="tabPaneCompras" prefHeight="200.0" prefWidth="200.0" tabClosingPolicy="UNAVAILABLE" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="5.0">
+                                       <tabs>
+                                          <Tab closable="false" text="Leer registro">
+                                             <content>
+                                                <AnchorPane prefHeight="200.0" prefWidth="200.0">
+                                                   <children>
+                                                      <HBox alignment="CENTER" prefHeight="311.0" prefWidth="705.0" style="-fx-background-color: #CECECE;" AnchorPane.bottomAnchor="5.0" AnchorPane.leftAnchor="5.0" AnchorPane.rightAnchor="5.0" AnchorPane.topAnchor="10.0">
+                                                         <children>
+                                                            <VBox>
+                                                               <children>
+                                                                  <Label text="ID">
+                                                                     <VBox.margin>
+                                                                        <Insets left="3.0" />
+                                                                     </VBox.margin>
+                                                                  </Label>
+                                                                  <ListView fx:id="lvCompraID" prefHeight="200.0" prefWidth="50.0" style="-fx-border-color: #FFFFFF;" VBox.vgrow="ALWAYS" />
+                                                               </children>
+                                                               <HBox.margin>
+                                                                  <Insets />
+                                                               </HBox.margin>
+                                                            </VBox>
+                                                            <VBox layoutX="345.0" layoutY="10.0" HBox.hgrow="ALWAYS">
+                                                               <children>
+                                                                  <Label text="Fecha de Compra">
+                                                                     <VBox.margin>
+                                                                        <Insets left="3.0" />
+                                                                     </VBox.margin>
+                                                                  </Label>
+                                                                  <ListView fx:id="lvCompraFecha" prefHeight="200.0" prefWidth="50.0" style="-fx-border-color: #FFFFFF;" VBox.vgrow="ALWAYS" />
+                                                               </children>
+                                                            </VBox>
+                                                            <VBox layoutX="370.0" layoutY="10.0" HBox.hgrow="ALWAYS">
+                                                               <children>
+                                                                  <Label text="Monto">
+                                                                     <VBox.margin>
+                                                                        <Insets left="3.0" />
+                                                                     </VBox.margin>
+                                                                  </Label>
+                                                                  <ListView fx:id="lvCompraMonto" prefHeight="200.0" prefWidth="50.0" style="-fx-border-color: #FFFFFF;" VBox.vgrow="ALWAYS" />
+                                                               </children>
+                                                            </VBox>
+                                                            <VBox layoutX="395.0" layoutY="10.0" HBox.hgrow="ALWAYS">
+                                                               <children>
+                                                                  <Label text="Tarjeta ID">
+                                                                     <VBox.margin>
+                                                                        <Insets left="3.0" />
+                                                                     </VBox.margin>
+                                                                  </Label>
+                                                                  <ListView fx:id="lvCompraTarjetaID" prefHeight="200.0" prefWidth="50.0" style="-fx-border-color: #FFFFFF;" VBox.vgrow="ALWAYS" />
+                                                               </children>
+                                                            </VBox>
+                                                            <VBox layoutX="370.0" layoutY="10.0" prefWidth="200.0" HBox.hgrow="ALWAYS">
+                                                               <children>
+                                                                  <Label text="Descripción de compra">
+                                                                     <VBox.margin>
+                                                                        <Insets left="3.0" />
+                                                                     </VBox.margin>
+                                                                  </Label>
+                                                                  <ListView fx:id="lvCompraDescripcion" prefHeight="200.0" prefWidth="50.0" style="-fx-border-color: #FFFFFF;" VBox.vgrow="ALWAYS" />
+                                                               </children>
+                                                            </VBox>
+                                                         </children>
+                                                      </HBox>
+                                                   </children></AnchorPane>
+                                             </content></Tab>
+                                          <Tab closable="false" onSelectionChanged="#initializeBuyTab" text="Agregar registro">
+                                             <content>
+                                                <AnchorPane prefHeight="200.0" prefWidth="200.0">
+                                                   <children>
+                                                      <Label layoutX="391.0" layoutY="44.0" text="Agregar Compra">
+                                                         <font>
+                                                            <Font size="29.0" />
+                                                         </font>
+                                                      </Label>
+                                                      <VBox alignment="TOP_CENTER" layoutX="211.0" layoutY="107.0" prefHeight="261.0" prefWidth="230.0">
+                                                         <children>
+                                                            <Label text="Fecha de la compra">
+                                                               <font>
+                                                                  <Font size="18.0" />
+                                                               </font>
+                                                            </Label>
+                                                            <DatePicker fx:id="dpDate" prefHeight="25.0" prefWidth="233.0" />
+                                                            <HBox prefHeight="20.0" prefWidth="230.0" />
+                                                            <Label layoutX="48.0" layoutY="10.0" text="Monto">
+                                                               <font>
+                                                                  <Font size="18.0" />
+                                                               </font>
+                                                            </Label>
+                                                            <TextField fx:id="tfMontoCompra" promptText="\$0.00" />
+                                                            <HBox layoutX="10.0" layoutY="62.0" prefHeight="18.0" prefWidth="230.0" />
+                                                            <Label text="Desrcripción">
+                                                               <font>
+                                                                  <Font size="18.0" />
+                                                               </font>
+                                                            </Label>
+                                                            <TextArea fx:id="taDescription" prefHeight="65.0" prefWidth="230.0" />
+                                                         </children>
+                                                      </VBox>
+                                                      <VBox alignment="TOP_CENTER" layoutX="540.0" layoutY="107.0" prefHeight="66.0" prefWidth="262.0">
+                                                         <children>
+                                                            <Label layoutX="114.0" layoutY="10.0" text="Tarjeta">
+                                                               <font>
+                                                                  <Font size="18.0" />
+                                                               </font>
+                                                            </Label>
+                                                            <ChoiceBox fx:id="cbCard" layoutX="10.0" layoutY="37.0" prefHeight="25.0" prefWidth="300.0" />
+                                                         </children>
+                                                      </VBox>
+                                                      <Button layoutX="544.0" layoutY="205.0" mnemonicParsing="false" onAction="#insertCompra" prefHeight="25.0" prefWidth="120.0" text="Agregar compra" />
+                                                      <Button layoutX="682.0" layoutY="205.0" mnemonicParsing="false" onAction="#limpiarBuyTab" prefHeight="25.0" prefWidth="120.0" text="Limpiar" />
+                                                   </children></AnchorPane>
+                                             </content></Tab>
+                                          <Tab fx:id="tabUpdateCompras" closable="false" text="Actualizar registro">
+                                             <content>
+                                                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                                                   <children>
+                                                      <VBox prefHeight="436.0" prefWidth="263.0">
+                                                         <children>
+                                                            <AnchorPane prefHeight="440.0" prefWidth="263.0">
+                                                               <children>
+                                                                  <Label layoutX="30.0" layoutY="71.0" text="Seleccione una compra" />
+                                                                  <TextField fx:id="tfCompraID" layoutX="40.0" layoutY="110.0" promptText="Ingrese un ID de compra" AnchorPane.leftAnchor="30.0" AnchorPane.rightAnchor="30.0" />
+                                                                  <Label fx:id="campoObligatorioUpdateCompra1" layoutX="133.0" layoutY="146.0" text="Campo obligatorio" textFill="RED" />
+                                                                  <Button layoutX="73.0" layoutY="205.0" mnemonicParsing="false" onAction="#seleccionarCompra" text="Seleccionar registro" />
+                                                               </children>
+                                                            </AnchorPane>
+                                                         </children>
+                                                      </VBox>
+                                                      <VBox layoutX="263.0" prefHeight="437.0" prefWidth="467.0">
+                                                         <children>
+                                                            <AnchorPane prefHeight="447.0" prefWidth="467.0">
+                                                               <children>
+                                                                  <Label layoutX="49.0" layoutY="69.0" text="Fecha de compra" />
+                                                                  <Label fx:id="campoObligatorioUpdate2" layoutX="105.0" layoutY="146.0" text="Campo obligatorio" textFill="RED" />
+                                                                  <Label layoutX="49.0" layoutY="201.0" text="Monto" />
+                                                                  <TextField fx:id="tfMonto" layoutX="50.0" layoutY="234.0" />
+                                                                  <Label fx:id="campoObligatorioUpdateCompra4" layoutX="105.0" layoutY="269.0" text="Campo obligatorio" textFill="RED" />
+                                                                  <Label layoutX="251.0" layoutY="69.0" text="Concepto" />
+                                                                  <TextField fx:id="tfConcepto" layoutX="251.0" layoutY="111.0" />
+                                                                  <Label fx:id="campoObligatorioUpdateCompra3" layoutX="301.0" layoutY="146.0" text="Campo obligatorio" textFill="RED" />
+                                                                  <Label layoutX="251.0" layoutY="201.0" text="ID de tarjeta" />
+                                                                  <TextField fx:id="tfIDTarjeta" layoutX="252.0" layoutY="234.0" />
+                                                                  <Label fx:id="campoObligatorioUpdateCompra5" layoutX="301.0" layoutY="269.0" text="Campo obligatorio" textFill="RED" />
+                                                                  <Button fx:id="btnActualizarCompra" layoutX="178.0" layoutY="333.0" mnemonicParsing="false" onAction="#actualizarRegistroCompra" text="Actualizar registro" />
+                                                                  <DatePicker fx:id="dpFechaCompra" layoutX="38.0" layoutY="111.0" prefHeight="26.0" prefWidth="163.0" />
+                                                               </children></AnchorPane>
+                                                         </children>
+                                                      </VBox>
+                                                   </children></AnchorPane>
+                                             </content>
+                                          </Tab>
+                                          <Tab closable="false" text="Eliminar registro">
+                                             <content>
+                                                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                                                   <children>
+                                                      <Text layoutX="27.0" layoutY="45.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ID Compra" />
+                                                      <TextField fx:id="txtIdCompraEliminar" layoutX="27.0" layoutY="55.0" prefHeight="25.0" prefWidth="116.0" />
+                                                      <Button fx:id="btnEliminarCompra" layoutX="151.0" layoutY="55.0" mnemonicParsing="false" onAction="#eliminarCompra" text="Eliminar" />
+                                                   </children></AnchorPane>
+                                             </content>
+                                          </Tab>
+                                       </tabs>
+                                    </TabPane>
+                                 </children>
+                              </AnchorPane>
+                           </content>
+                        </Tab>
+                     </tabs>
+                  </TabPane>
+               </children></AnchorPane>
+      </content>
+    </Tab>
+    <Tab closable="false" text="Reportes">
+      <content>
+        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+               <children>
+                  <VBox layoutX="-1.0" layoutY="5.0" prefHeight="499.0" prefWidth="300.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0">
+                     <padding>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </padding>
+                     <children>
+                        <Label text="Seleccione el reporte:" />
+                        <TabPane prefHeight="200.0" prefWidth="200.0" tabClosingPolicy="UNAVAILABLE" VBox.vgrow="ALWAYS">
+                          <tabs>
+                            <Tab fx:id="tabReporteA" closable="false" text="Reporte A">
+                                 <content>
+                                    <AnchorPane prefHeight="200.0" prefWidth="200.0">
+                                       <children>
+                                          <TextField fx:id="tfIdClienteRA" layoutX="10.0" layoutY="71.0" prefHeight="25.0" prefWidth="265.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" />
+                                          <Label layoutX="10.0" layoutY="54.0" text="ID del cliente" AnchorPane.leftAnchor="10.0" />
+                                          <Label layoutX="93.0" layoutY="14.0" text="Compras del cliente" />
+                                          <DatePicker fx:id="dpFechaInicial" layoutX="14.0" layoutY="135.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" />
+                                          <Label layoutX="10.0" layoutY="118.0" text="Fecha inicial" />
+                                          <DatePicker fx:id="dpFechaFinal" layoutX="10.0" layoutY="201.0" prefHeight="25.0" prefWidth="257.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" />
+                                          <Label layoutX="10.0" layoutY="184.0" text="Fecha final" />
+                                          <Label fx:id="errorLabel1" alignment="CENTER_RIGHT" contentDisplay="RIGHT" layoutX="13.0" layoutY="96.0" prefHeight="17.0" prefWidth="263.0" text="Error" textAlignment="RIGHT" textFill="RED" />
+                                          <Label fx:id="errorLabel2" alignment="CENTER_RIGHT" contentDisplay="RIGHT" layoutX="13.0" layoutY="160.0" prefHeight="17.0" prefWidth="263.0" text="Error" textAlignment="RIGHT" textFill="RED" />
+                                          <Label fx:id="errorLabel3" alignment="CENTER_RIGHT" layoutX="13.0" layoutY="226.0" prefHeight="17.0" prefWidth="263.0" text="Error" textAlignment="RIGHT" textFill="RED" />
+                                       </children>
+                                    </AnchorPane>
+                                 </content>
+                              </Tab>
+                            <Tab fx:id="tabReporteB" closable="false" text="Reporte B">
+                                 <content>
+                                    <AnchorPane prefHeight="200.0" prefWidth="200.0">
+                                       <children>
+                                          <TextField fx:id="tfIdClienteRB" layoutX="10.0" layoutY="71.0" prefHeight="25.0" prefWidth="124.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" />
+                                          <Label layoutX="15.0" layoutY="54.0" text="ID del cliente" AnchorPane.leftAnchor="15.0" />
+                                          <Label layoutX="98.0" layoutY="14.0" text="Gastos del cliente" />
+                                          <Label layoutX="16.0" layoutY="113.0" text="Mes" />
+                                          <Label layoutX="17.0" layoutY="172.0" text="Año" />
+                                          <TextField fx:id="tfAnio" layoutX="10.0" layoutY="189.0" prefHeight="25.0" prefWidth="125.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" />
+                                          <ChoiceBox fx:id="cbMes" layoutX="10.0" layoutY="130.0" prefHeight="25.0" prefWidth="127.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" />
+                                          <Label fx:id="errorLabel4" alignment="CENTER_RIGHT" layoutX="16.0" layoutY="96.0" prefHeight="17.0" prefWidth="260.0" text="Error" textAlignment="RIGHT" textFill="RED" />
+                                          <Label fx:id="errorLabel5" alignment="CENTER_RIGHT" layoutX="14.0" layoutY="155.0" prefHeight="17.0" prefWidth="262.0" text="Error" textAlignment="RIGHT" textFill="RED" />
+                                          <Label fx:id="errorLabel6" alignment="CENTER_RIGHT" layoutX="15.0" layoutY="214.0" prefHeight="17.0" prefWidth="261.0" text="Error" textAlignment="RIGHT" textFill="RED" />
+                                       </children>
+                                    </AnchorPane>
+                                 </content>
+                              </Tab>
+                              <Tab fx:id="tabReporteC" closable="false" text="Reporte C">
+                                 <content>
+                                    <AnchorPane prefHeight="200.0" prefWidth="200.0">
+                                       <children>
+                                          <TextField fx:id="tfIdClienteRC" layoutX="10.0" layoutY="71.0" prefHeight="25.0" prefWidth="265.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" />
+                                          <Label layoutX="10.0" layoutY="54.0" text="ID del cliente" AnchorPane.leftAnchor="10.0" />
+                                          <Label layoutX="96.0" layoutY="14.0" text="Tarjetas del cliente" />
+                                          <Label fx:id="errorLabel7" alignment="CENTER_RIGHT" layoutX="16.0" layoutY="96.0" prefHeight="17.0" prefWidth="260.0" text="Error" textAlignment="RIGHT" textFill="RED" />
+                                       </children>
+                                    </AnchorPane>
+                                 </content>
+                              </Tab>
+                              <Tab fx:id="tabReporteD" closable="false" text="Reporte D">
+                                 <content>
+                                    <AnchorPane prefHeight="200.0" prefWidth="200.0">
+                                       <children>
+                                          <Label layoutX="10.0" layoutY="54.0" text="Facilitador" AnchorPane.leftAnchor="10.0" />
+                                          <Label layoutX="85.0" layoutY="14.0" text="Clientes por facilitador" />
+                                          <ComboBox fx:id="cmbFacilitador" layoutX="10.0" layoutY="71.0" prefWidth="150.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" />
+                                          <Label fx:id="errorLabel8" alignment="CENTER_RIGHT" layoutX="12.0" layoutY="96.0" prefHeight="17.0" prefWidth="268.0" text="Error" textAlignment="RIGHT" textFill="RED" />
+                                       </children>
+                                    </AnchorPane>
+                                 </content>
+                              </Tab>
+                          </tabs>
+                           <VBox.margin>
+                              <Insets bottom="5.0" top="5.0" />
+                           </VBox.margin>
+                        </TabPane>
+                        <HBox alignment="CENTER" spacing="50.0">
+                           <children>
+                              <Button fx:id="btnConsultar" alignment="BASELINE_CENTER" mnemonicParsing="false" onAction="#handleBtnConsultar" prefWidth="105.0" text="Consultar" />
+                           </children>
+                           <padding>
+                              <Insets left="10.0" right="10.0" />
+                           </padding>
+                        </HBox>
+                     </children>
+                  </VBox>
+                  <TextArea fx:id="taMuestraReporte" layoutX="434.0" layoutY="20.0" prefHeight="200.0" prefWidth="200.0" AnchorPane.bottomAnchor="5.0" AnchorPane.leftAnchor="300.0" AnchorPane.rightAnchor="5.0" AnchorPane.topAnchor="5.0" />
+               </children></AnchorPane>
+      </content>
+    </Tab>
+  </tabs>
+</TabPane>

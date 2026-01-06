@@ -1,0 +1,94 @@
+.card {
+  width: 260px;
+  height: 20em;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 0 auto;
+  transition: ease-out 0.1s;
+  font: 400 20px Raleway, sans-serif;
+
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+.cardImage {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+.cardContent {
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.cardHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.cardTitle {
+  font-size: 18px;
+  font-weight: 600;
+  color: #26364e;
+}
+
+.cardIcon {
+  width: 24px;
+  height: 24px;
+}
+
+.cardDescription {
+  font-size: 14px;
+  color: #6f6c90;
+  line-height: 1.5;
+}
+
+.navLink {
+  display: flex;
+  text-decoration: none;
+}
+
+.cardAction {
+  background: #2e415e;
+  color: #ffffff;
+  border: none;
+  border-radius: 8px;
+  padding: 8px 48px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  margin: 16px auto;
+  text-align: center;
+  transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+  border: 2px solid transparent; 
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+  
+}
+
+.cardAction:hover {
+  background: var(--secondary-600); 
+  transform: translateY(-3px); 
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); 
+  border: 2px solid #f4f4f4; 
+}
+
+.cardAction:focus {
+  outline: none; 
+  border: 2px solid #2e415e; 
+}
+
+.cardAction:active {
+  transform: translateY(2px); 
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+}

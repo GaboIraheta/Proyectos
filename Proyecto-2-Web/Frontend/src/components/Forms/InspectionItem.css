@@ -1,0 +1,45 @@
+.inspectionItem {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 16px;
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  background-color: #e8f5e9;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.description {
+  color: #333;
+  font-size: 16px;
+  line-height: 1.5;
+  padding: 12px;
+  background-color: #ffffff;
+  border-radius: 8px;
+  flex-grow: 1;
+}
+
+.divider {
+  background: #d9d9d9;
+  height: 1px;
+  margin: 12px 0;
+  width: 100%;
+}
+
+.optionsContainer {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 16px;
+}
+
+.optionsContainer:hover {
+  background-color: #d4edda;
+}
+
+.inspectionItem:hover {
+  background-color: #d4edda;
+}

@@ -1,0 +1,41 @@
+IMPUESTO_CASAS Malditos.baches Paga.$25.por.cada.casa.y.$100.por.cada.hotel
+IMPUESTO_CASAS Mantenimiento Hay.que.dar.mantenimiento.a.tus.edificios..paga.$25.por.cada.casa.y.$100.por.cada.hotel.
+IMPUESTO_CASAS Inspección El.gobierno.recoge.los.impuestos.por.tus.propiedades..paga.$25.por.cada.casa.y.$100.por.cada.hotel.
+PAGO Gastos.Escolares Paga.$150.por.los.gastos.escolares.de.la.comunidad. 150
+PAGO Borrachin Se.le.encontró.manejando.en.estado.de.embriaguez,.pague.$20. 20
+PAGO Tax.Time.;) -$500 500
+PAGO Más.despacio.velocista Exceso.de.velocidad,.pague.$15 15
+PAGO No.estás.asegurado Te.dió.una.gripe.y.ahora.tienes.que.pagar.$100.al.hospital 100
+PAGO Lo.que.sea.por.una.buena.educación Te.toca.pagar.$150.de.la.matriculación.de.tu.hijo 150
+PAGO Factura Paga.factura.hospitalaria,.pague.$100 100
+PAGO United.States.moment Tienes.que.pagarle.al.doctor.$50.(estás.asegurado) 50
+PAGO Poliza Pague.la.poliza.de.seguro,.pague.$50 50
+PAGO Factura El.médico.cobra.factura,.pague.$50 50
+COBRO Intereses El.banco.te.paga.intereses,.cobre.$50 50
+COBRO Cuchubal!! Te.tocó.el.cuchubal!.cobra.$150. 150
+COBRO Que.Habilidad.Señor! Ganaste.el.concurso.de.crucigramas!.cobra.$100. 100
+COBRO Bienes.raices La.venta.de.tus.acciones.te.genera.$50. 50
+COBRO :( Cobras.una.herencia.(si.celebras.eres.mala.persona).recibes.$100. 100
+COBRO Inversor Recibes.intereses.de.tus.plazos.fijos,.cobra.$100. 100
+COBRO Inversor Recibes.intereses.de.tus.plazos.fijos,.cobra.$100 100
+COBRO Corrupto? Hacienda.te.devuelve.$20. 20
+COBRO Un.rayo.cósmico Tu.cuenta.de.banco.tiene.$256.de.más 256
+COBRO Apostar.sí.sirve Ganaste.$50.de.tu.venta.de.acciones 50
+COBRO Ya.es.diciembre Cobra.$100.para.tu.aguinaldo 100
+COBRO Cuello.con.Hacienda? Ellos.te.devuelven.$20.que.pagaste.de.más.de.impuestos 20
+COBRO Fraude.exitoso Fingiste.tu.muerte.y.cobras.$100.de.tu.seguro.de.vida 100
+COBRO Le.sabes.al.mercado Ganas.$50.por.tus.logros.como.asesor 50
+COBRO Ganaste.el.concurso.de.belleza.local Tu.ganancia.neta.es.de.$10.(el.resto.cubre.el.gasto.de.maquillaje) 10
+COBRO VAMOOOOOOO Tu.papá.se.murió.y.heredas.$200.de.sus.fondos 200
+MOVIMIENTO Descansito Vuelve.a.la.casilla.de.salida 0
+MOVIMIENTO Visite.a.mi.tía Muevete.a.la.Avenida.Vermont 8
+MOVIMIENTO No.que.vendian.pollo? Viaje.a.la.Avenida.Kentucky 21
+MOVIMIENTO Ulala.señor.americano Muevase.a.St.James.Place 16
+MOVIMIENTO Otra.vez? Regresa.a.la.casilla.de.salida 0
+MOVIMIENTO Un.ciclo.sin.fin Muévete.a.la.salida 0
+MOVIMIENTO Donald.Trump.moment Vete.a.la.carcel!.No.pasas.por.la.salida 10
+MOVIMIENTO Hermano.cayó.la.ley Vete.a.la.cárcel!.no.cobre.nada.si.pasa.por.la.entrada 10
+MOVIMIENTO Hermano.cayó.la.ley Vete.a.la.cárcel!.no.cobre.nada.si.pasa.por.la.entrada 10
+LIBRE Libre! Guarda.esta.tarjeta.hasta.que.la.necesites.(será.cuello?)
+LIBRE Libre! Guarda.esta.tarjeta.hasta.que.la.necesites.(será.cuello?)
+LIBRE Eres.libre!.(ni.siquiera.estás.preso?) Sales.de.la.cárcel.gratis.para.la.próxima

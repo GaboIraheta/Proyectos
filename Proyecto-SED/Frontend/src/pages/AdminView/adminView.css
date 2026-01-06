@@ -1,0 +1,136 @@
+/* --- Vista de administrador --- */
+.admin-employees {
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.admin-employees h2 {
+  color: #256b45;
+}
+
+.admin-actions {
+  display: flex;
+  gap: 1rem;
+}
+
+.admin-actions button {
+  background-color: #2e8b57;
+  color: white;
+  border: none;
+  padding: 0.7rem 1.4rem;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.admin-actions button:hover {
+  background-color: #256b45;
+}
+
+.employees-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+}
+
+.employee-card {
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
+  padding: 1rem;
+  width: 260px;
+  text-align: center;
+}
+
+.employee-card.inactive {
+  opacity: 0.6;
+  filter: grayscale(60%);
+}
+
+.employee-card h3 {
+  margin-bottom: 0.3rem;
+  color: #2e8b57;
+}
+
+.employee-card p {
+  margin: 0.3rem 0;
+  color: #555;
+}
+
+.employee-card .actions {
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+.employee-card button {
+  padding: 0.4rem;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  background-color: #e6e6e6;
+  transition: background 0.2s;
+}
+
+.employee-card button:hover {
+  background-color: #ccc;
+}
+
+/* --- Formulario dinámico --- */
+.employee-form {
+  background: #f9f9f9;
+  border: 1px solid #ccc;
+  padding: 1rem;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+  max-width: 400px;
+}
+
+.employee-form input {
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+.form-actions {
+  display: flex;
+  gap: 1rem;
+}
+
+.form-actions button {
+  background-color: #2e8b57;
+  color: white;
+  border: none;
+  padding: 0.6rem 1.2rem;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.form-actions button:hover {
+  background-color: #256b45;
+}
+
+/* Checkbox + label inline for IsAdmin */
+.admin-checkbox {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-top: 0.2rem;
+}
+
+.admin-checkbox input[type="checkbox"] {
+  width: 1.05rem;
+  height: 1.05rem;
+  margin: 0;
+}
+
+.admin-checkbox label {
+  margin: 0;
+  font-weight: 600;
+  color: #333;
+}

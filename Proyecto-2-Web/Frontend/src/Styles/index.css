@@ -1,0 +1,95 @@
+:root {
+  --primary-50: #F1F6FC;
+  --primary-100: #839CC2;
+  --primary-200: #597BAE;
+  --primary-300: #425E87;
+  --primary-400: #2E415E;
+  --primary-500: #26364E;
+  --primary-600: #1F2B3F;
+  --primary-700: #17202F;
+  --primary-800: #0F161F;
+  --secondary-300: #E1F0E3;
+  --secondary-400: #DDEEDF;
+  --secondary-500: #91C897;
+  --secondary-600: #91C897;
+  --secondary-700: #6AB573;
+  --h5-size: 1.563rem;
+
+  --gradient: linear-gradient (25deg,
+      rgba(1, 115, 115, 1) 0%,
+      rgba(170, 217, 209, 1) 100%);
+}
+
+body{
+  margin: 0px;
+  padding: 0px;
+  background-color: var(--primary-50);
+}
+
+.h1 {
+  font-family: "Raleway";
+  font-size: 3.815rem;
+  line-height: 106%;
+  letter-spacing: -3px;
+  margin: 0px;
+}
+
+.h2 {
+  font-family: "Raleway";
+  font-size: 3.052rem;
+  line-height: 120%;
+  letter-spacing: 3px;
+  margin: 0px;
+}
+
+.h3 {
+  font-family: "Raleway";
+  font-weight: 700;
+  font-size: 2.441rem;
+  line-height: 120%;
+  letter-spacing: -0.64px;
+  margin: 0px;
+}
+
+.h4 {
+  font-family: "Raleway";
+  font-weight: 700;
+  font-size: 1.953rem;
+  line-height: 120%;
+  letter-spacing: -0.64px;
+  margin: 0px;
+}
+
+.h5 {
+  font-family: "Raleway";
+  font-weight: 700;
+  font-size: 1.563rem;
+  line-height: 140%;
+  letter-spacing: -0.64px;
+  margin: 0px;
+}
+
+.h6 {
+  font-family: "Raleway";
+  font-weight: 700;
+  font-size: 1.25rem;
+  line-height: 140%;
+  letter-spacing: -0.64px;
+  margin: 0px;
+}
+
+.large-text {
+  font-family: "Raleway";
+  font-size: 1rem;
+  line-height: 140%;
+  letter-spacing: -0.64px;
+  margin: 0px;
+}
+
+.small-text {
+  font-family: "Raleway";
+  font-size: 0.8rem;
+  line-height: 140%;
+  letter-spacing: -0.64px;
+  margin: 0px;
+}

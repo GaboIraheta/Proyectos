@@ -1,0 +1,24 @@
+.NotFound-Section {
+    height: 50vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.NotFound-Section h1 {
+    font: 400 6em Raleway, sans-serif;
+    color: var(--primary-500);
+}
+
+.NotFound-Section h2 {
+    font: 400 2em Raleway, sans-serif;
+    color: var(--primary-500);
+}
+
+.here {
+    margin-left: 7em;
+    font: 400 1em Raleway, sans-serif;
+    color: var(--primary-500);
+}

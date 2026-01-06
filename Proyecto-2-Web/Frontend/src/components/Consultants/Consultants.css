@@ -1,0 +1,44 @@
+.namecon{
+    color: var(--primary-50);
+}
+
+.consultants-list {
+    margin: 2em;
+    gap: 1em;
+    flex-wrap: wrap;
+    display: flex;
+    flex-direction: row;
+    justify-content:space-around;
+    height: 80vh;
+}
+
+.consultant-card {
+    background-color: var(--primary-300);
+    font-family: "Raleway";
+    width: 20em;
+    height: 20em;
+    padding: 10px;
+    border-radius: 1em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.consultant-card button {
+    margin-top: 1em;
+    background-color: var(--primary-500); 
+    color: white;
+    border: none;
+    border-radius: 20px;
+    padding: 10px 20px;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.consultant-card button:hover {
+    background-color: var(--secondary-500); 
+}
+

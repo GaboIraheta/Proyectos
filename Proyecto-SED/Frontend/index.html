@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="./src/style.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mini Super</title>
+  </head>
+  <body>
+    <header class="navbar" id="navbar">
+    <div class="navbar-logo"><a href="/" data-link>Mini Súper</a></div>
+    <nav class="navbar-links">
+      <a href="/" class="guest-link user-link employee-link admin-link hidden" data-link>Inicio</a>
+      <a href="/productos" class="guest-link user-link employee-link admin-link hidden" data-link>Productos</a>
+      <a href="/login" class="guest-link hidden" data-link>Iniciar Sesión</a>
+      <a href="/carrito" class="user-link hidden" data-link>Carrito</a>
+      <a href="/empleados-productos" class="employee-link admin-link hidden" data-link>Editar productos</a>
+      <a href="/administrar-empleados" class="admin-link hidden" data-link>Administrar Empleados</a>
+      <button id="logout-button" class="logout-btn user-link employee-link admin-link hidden">Cerrar sesión</button>
+    </nav>
+  </header>
+
+  <main id="app"></main>
+    <script type="module" src="/src/router.js"></script>
+  </body>
+</html>

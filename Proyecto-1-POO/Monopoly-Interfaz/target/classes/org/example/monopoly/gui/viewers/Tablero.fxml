@@ -1,0 +1,580 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane fx:id="Pane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onMouseEntered="#turno" prefHeight="894.0" prefWidth="1610.0" style="-fx-background-color: #8FBC72;" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.monopoly.gui.controller.TableroController">
+   <children>
+      <HBox layoutX="45.0" layoutY="720.0" prefHeight="136.0" prefWidth="1227.0" style="-fx-background-color: #BFDBAE; -fx-border-color: #000000;">
+         <children>
+            <VBox alignment="TOP_RIGHT" prefHeight="200.0" prefWidth="136.0" style="-fx-border-color: #000000;">
+               <children>
+                  <ImageView fitHeight="98.0" fitWidth="94.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@Images/Carcel.png" />
+                     </image>
+                  </ImageView>
+                  <Label fx:id="p10" alignment="CENTER" contentDisplay="CENTER" prefHeight="38.0" prefWidth="136.0" text="Label" />
+               </children></VBox>
+            <VBox prefHeight="115.0" prefWidth="105.0" style="-fx-border-color: #000000;">
+               <children>
+                  <HBox alignment="CENTER" prefHeight="51.0" prefWidth="106.0" style="-fx-background-color: #BADFFA; -fx-border-color: #000000;">
+                     <children>
+                        <Label text="5">
+                           <font>
+                              <Font size="24.0" />
+                           </font>
+                        </Label>
+                     </children></HBox>
+                  <Label fx:id="h5" alignment="CENTER" contentDisplay="CENTER" prefHeight="48.0" prefWidth="103.0" text="Label" />
+                  <Label fx:id="p9" alignment="CENTER" contentDisplay="CENTER" prefHeight="35.0" prefWidth="103.0" text="Label" />
+               </children></VBox>
+            <VBox prefHeight="200.0" prefWidth="105.8" style="-fx-border-color: #000000;">
+               <children>
+                  <HBox alignment="CENTER" prefHeight="51.0" prefWidth="106.0" style="-fx-background-color: #BADFFA; -fx-border-color: #000000;">
+                     <children>
+                        <Label text="4">
+                           <font>
+                              <Font size="24.0" />
+                           </font>
+                        </Label>
+                     </children></HBox>
+                  <Label fx:id="h4" alignment="CENTER" contentDisplay="CENTER" prefHeight="49.0" prefWidth="104.0" text="Label" />
+                  <Label fx:id="p8" alignment="CENTER" contentDisplay="CENTER" prefHeight="33.0" prefWidth="107.0" text="Label" />
+               </children>
+            </VBox>
+            <VBox alignment="BOTTOM_CENTER" prefHeight="200.0" prefWidth="105.8" style="-fx-border-color: #000000;">
+               <children>
+                  <Label fx:id="p7" alignment="CENTER" contentDisplay="CENTER" prefHeight="30.0" prefWidth="119.0" text="Label" />
+                  <ImageView fitHeight="89.0" fitWidth="97.0" layoutX="19.0" layoutY="47.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@Images/Wheel_of_Fortune.png" />
+                     </image>
+                  </ImageView>
+                  <HBox prefHeight="7.0" prefWidth="104.0" />
+               </children></VBox>
+            <VBox prefHeight="200.0" prefWidth="105.8" style="-fx-border-color: #000000;">
+               <children>
+                  <HBox alignment="CENTER" prefHeight="51.0" prefWidth="106.0" style="-fx-background-color: #BADFFA; -fx-border-color: #000000;">
+                     <children>
+                        <Label text="3">
+                           <font>
+                              <Font size="24.0" />
+                           </font>
+                        </Label>
+                     </children></HBox>
+                  <Label fx:id="h3" alignment="CENTER" contentDisplay="CENTER" prefHeight="47.0" prefWidth="104.0" text="Label" />
+                  <Label fx:id="p6" alignment="CENTER" contentDisplay="CENTER" prefHeight="35.0" prefWidth="112.0" text="Label" />
+               </children>
+            </VBox>
+            <VBox alignment="BOTTOM_CENTER" prefHeight="200.0" prefWidth="105.8" style="-fx-border-color: #000000;">
+               <children>
+                  <Label fx:id="p5" alignment="CENTER" contentDisplay="CENTER" prefHeight="37.0" prefWidth="119.0" text="Label" />
+                  <ImageView fitHeight="95.0" fitWidth="102.0" layoutX="12.0" layoutY="50.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@Images/estacion.gif" />
+                     </image>
+                  </ImageView>
+               </children></VBox>
+            <VBox alignment="BOTTOM_CENTER" prefHeight="200.0" prefWidth="105.8" style="-fx-border-color: #000000;">
+               <children>
+                  <Label fx:id="p4" alignment="CENTER" contentDisplay="CENTER" prefHeight="42.0" prefWidth="123.0" text="Label" />
+                  <ImageView fitHeight="95.0" fitWidth="102.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@Images/tax.png" />
+                     </image>
+                  </ImageView>
+               </children></VBox>
+            <VBox prefHeight="200.0" prefWidth="105.8" style="-fx-border-color: #000000;">
+               <children>
+                  <HBox alignment="CENTER" prefHeight="51.0" prefWidth="106.0" style="-fx-background-color: #955027; -fx-border-color: #000000;">
+                     <children>
+                        <Label text="2">
+                           <font>
+                              <Font size="24.0" />
+                           </font>
+                        </Label>
+                     </children></HBox>
+                  <Label fx:id="h2" alignment="CENTER" contentDisplay="CENTER" prefHeight="49.0" prefWidth="104.0" text="Label" />
+                  <Label fx:id="p3" alignment="CENTER" contentDisplay="CENTER" prefHeight="34.0" prefWidth="108.0" text="Label" />
+               </children>
+            </VBox>
+            <VBox alignment="BOTTOM_CENTER" prefHeight="200.0" prefWidth="105.8" style="-fx-border-color: #000000;">
+               <children>
+                  <Label fx:id="p2" alignment="CENTER" contentDisplay="CENTER" prefHeight="30.0" prefWidth="109.0" text="Label" />
+                  <ImageView fitHeight="89.0" fitWidth="97.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@Images/Wheel_of_Fortune.png" />
+                     </image>
+                  </ImageView>
+                  <HBox layoutX="11.0" layoutY="136.0" prefHeight="7.0" prefWidth="104.0" />
+               </children></VBox>
+            <VBox prefHeight="200.0" prefWidth="105.8" style="-fx-border-color: #000000;">
+               <children>
+                  <HBox alignment="CENTER" prefHeight="51.0" prefWidth="106.0" style="-fx-background-color: #955027; -fx-border-color: #000000;">
+                     <children>
+                        <Label text="1">
+                           <font>
+                              <Font size="24.0" />
+                           </font>
+                        </Label>
+                     </children></HBox>
+                  <Label fx:id="h1" alignment="CENTER" contentDisplay="CENTER" prefHeight="51.0" prefWidth="104.0" text="Label" />
+                  <Label fx:id="p1" alignment="CENTER" contentDisplay="CENTER" prefHeight="39.0" prefWidth="117.0" text="Label" />
+               </children>
+            </VBox>
+            <VBox prefHeight="161.0" prefWidth="136.0" style="-fx-border-color: #000000;">
+               <children>
+                  <ImageView fitHeight="83.0" fitWidth="141.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@Images/Salida.png" />
+                     </image>
+                  </ImageView>
+                  <Label fx:id="p0" alignment="CENTER" contentDisplay="CENTER" prefHeight="56.0" prefWidth="134.0" text="Label" />
+               </children></VBox>
+         </children>
+      </HBox>
+      <VBox alignment="TOP_CENTER" layoutX="1290.0" layoutY="39.0" prefHeight="817.0" prefWidth="282.0" style="-fx-background-color: #D7BAAA; -fx-background-radius: 20;">
+         <children>
+            <HBox prefHeight="17.0" prefWidth="282.0" />
+            <Label text="Turno de:">
+               <font>
+                  <Font name="Copperplate Gothic Bold" size="28.0" />
+               </font>
+            </Label>
+            <Label fx:id="player" text="Jugador">
+               <font>
+                  <Font name="Copperplate Gothic Bold" size="41.0" />
+               </font>
+            </Label>
+            <HBox alignment="CENTER" prefHeight="45.0" prefWidth="282.0">
+               <children>
+                  <Label text="Balance: $">
+                     <font>
+                        <Font name="Copperplate Gothic Bold" size="22.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="balance" text="1500">
+                     <font>
+                        <Font name="Copperplate Gothic Bold" size="22.0" />
+                     </font></Label>
+               </children>
+            </HBox>
+            <Button fx:id="tirarDados" mnemonicParsing="false" onAction="#throwDices" onMouseClicked="#throwDices" prefHeight="42.0" prefWidth="220.0" style="-fx-background-color: #BFDBAE;" text="Tirar Dados">
+               <font>
+                  <Font name="Copperplate Gothic Bold" size="24.0" />
+               </font>
+            </Button>
+            <HBox prefHeight="32.0" prefWidth="282.0" />
+            <Button fx:id="negociar" layoutX="41.0" layoutY="208.0" mnemonicParsing="false" onAction="#negociarAction" prefHeight="42.0" prefWidth="220.0" style="-fx-background-color: #BFDBAE;" text="Negociar">
+               <font>
+                  <Font name="Copperplate Gothic Bold" size="24.0" />
+               </font>
+            </Button>
+            <HBox layoutX="10.0" layoutY="252.0" prefHeight="32.0" prefWidth="282.0" />
+            <Button fx:id="comprarCasas" layoutX="41.0" layoutY="284.0" mnemonicParsing="false" onAction="#comprarCasasAction" prefHeight="42.0" prefWidth="220.0" style="-fx-background-color: #BFDBAE;" text="Comprar Casas">
+               <font>
+                  <Font name="Copperplate Gothic Bold" size="21.0" />
+               </font>
+            </Button>
+            <HBox layoutX="10.0" layoutY="328.0" prefHeight="32.0" prefWidth="282.0" />
+            <Button fx:id="hipotecar" layoutX="41.0" layoutY="360.0" mnemonicParsing="false" onAction="#hipotecarAction" prefHeight="42.0" prefWidth="220.0" style="-fx-background-color: #BFDBAE;" text="Hipotecar">
+               <font>
+                  <Font name="Copperplate Gothic Bold" size="24.0" />
+               </font>
+            </Button>
+            <HBox layoutX="10.0" layoutY="349.0" prefHeight="32.0" prefWidth="282.0" />
+            <Label fx:id="propertyText" text="Propiedades:">
+               <font>
+                  <Font name="Copperplate Gothic Bold" size="23.0" />
+               </font>
+            </Label>
+            <HBox prefHeight="9.0" prefWidth="282.0" />
+            <HBox prefHeight="314.0" prefWidth="282.0">
+               <children>
+                  <VBox prefHeight="325.0" prefWidth="21.0" />
+                  <ListView fx:id="propiedades" prefHeight="287.0" prefWidth="239.0" style="-fx-border-radius: 20;" />
+               </children>
+            </HBox>
+         </children></VBox>
+      <VBox layoutX="45.0" layoutY="174.0" prefHeight="546.0" prefWidth="136.0" style="-fx-background-color: #BFDBAE; -fx-border-color: #000000; -fx-rotate: 180;">
+         <children>
+            <HBox alignment="CENTER_LEFT" prefHeight="60.7" prefWidth="200.0" style="-fx-border-color: #000000;">
+               <children>
+                  <VBox alignment="CENTER" prefHeight="59.0" prefWidth="40.0" style="-fx-background-color: #D43589; -fx-border-color: #000000;">
+                     <children>
+                        <Label style="-fx-rotate: 270;" text="6">
+                           <font>
+                              <Font size="24.0" />
+                           </font>
+                        </Label>
+                     </children></VBox>
+                  <Label fx:id="h6" alignment="CENTER" contentDisplay="CENTER" prefHeight="29.0" prefWidth="51.0" rotate="-90.0" text="Label" />
+                  <Label fx:id="p11" alignment="CENTER" contentDisplay="CENTER" layoutX="51.0" layoutY="19.0" prefHeight="17.0" prefWidth="55.0" rotate="-90.0" text="Label" />
+               </children>
+            </HBox>
+            <HBox alignment="CENTER_RIGHT" prefHeight="60.7" prefWidth="200.0" style="-fx-border-color: #000000;">
+               <children>
+                  <ImageView fitHeight="64.0" fitWidth="62.0" pickOnBounds="true" preserveRatio="true" style="-fx-rotate: -90;">
+                     <image>
+                        <Image url="@Images/Electric.gif" />
+                     </image>
+                  </ImageView>
+                  <VBox prefHeight="200.0" prefWidth="7.0" />
+                  <Label fx:id="p12" alignment="CENTER" contentDisplay="CENTER" prefHeight="56.0" prefWidth="62.0" rotate="-90.0" text="Label" />
+               </children></HBox>
+            <HBox alignment="CENTER_LEFT" prefHeight="60.7" prefWidth="200.0" style="-fx-border-color: #000000;">
+               <children>
+                  <VBox alignment="CENTER" prefHeight="59.0" prefWidth="40.0" style="-fx-background-color: #D43589; -fx-border-color: #000000;">
+                     <children>
+                        <Label style="-fx-rotate: 270;" text="7">
+                           <font>
+                              <Font name="Copperplate Gothic Bold" size="24.0" />
+                           </font>
+                        </Label>
+                     </children></VBox>
+                  <Label fx:id="h7" alignment="CENTER" contentDisplay="CENTER" layoutX="51.0" layoutY="21.0" prefHeight="11.0" prefWidth="52.0" rotate="-90.0" text="Label" />
+                  <Label fx:id="p13" alignment="CENTER" contentDisplay="CENTER" prefHeight="7.0" prefWidth="47.0" rotate="-90.0" text="Label" />
+               </children>
+            </HBox>
+            <HBox alignment="CENTER_LEFT" prefHeight="60.7" prefWidth="200.0" style="-fx-border-color: #000000;">
+               <children>
+                  <VBox alignment="CENTER" prefHeight="59.0" prefWidth="40.0" style="-fx-background-color: #D43589; -fx-border-color: #000000;">
+                     <children>
+                        <Label style="-fx-rotate: 270;" text="8">
+                           <font>
+                              <Font size="24.0" />
+                           </font>
+                        </Label>
+                     </children></VBox>
+                  <Label fx:id="h8" alignment="CENTER" contentDisplay="CENTER" prefHeight="28.0" prefWidth="47.0" rotate="-90.0" text="Label" />
+                  <Label fx:id="p14" alignment="CENTER" contentDisplay="CENTER" layoutX="51.0" layoutY="19.0" prefHeight="38.0" prefWidth="48.0" rotate="-90.0" text="Label" />
+               </children>
+            </HBox>
+            <HBox alignment="CENTER_RIGHT" prefHeight="60.7" prefWidth="200.0" style="-fx-border-color: #000000;">
+               <children>
+                  <Label fx:id="p15" alignment="CENTER" contentDisplay="CENTER" prefHeight="38.0" prefWidth="48.0" rotate="-90.0" text="Label" />
+                  <ImageView fitHeight="64.0" fitWidth="62.0" layoutX="81.0" layoutY="12.0" pickOnBounds="true" preserveRatio="true" style="-fx-rotate: -90;">
+                     <image>
+                        <Image url="@Images/estacion.gif" />
+                     </image>
+                  </ImageView>
+               </children></HBox>
+            <HBox alignment="CENTER_LEFT" prefHeight="60.7" prefWidth="200.0" style="-fx-border-color: #000000;">
+               <children>
+                  <VBox alignment="CENTER" prefHeight="59.0" prefWidth="40.0" style="-fx-background-color: #F59201; -fx-border-color: #000000;">
+                     <children>
+                        <Label style="-fx-rotate: 270;" text="9">
+                           <font>
+                              <Font size="24.0" />
+                           </font>
+                        </Label>
+                     </children></VBox>
+                  <Label fx:id="h9" alignment="CENTER" contentDisplay="CENTER" prefHeight="19.0" prefWidth="48.0" rotate="-90.0" text="Label" />
+                  <Label fx:id="p16" alignment="CENTER" contentDisplay="CENTER" layoutX="51.0" layoutY="31.0" prefHeight="19.0" prefWidth="48.0" rotate="-90.0" text="Label" />
+               </children>
+            </HBox>
+            <HBox alignment="CENTER_RIGHT" prefHeight="60.7" prefWidth="200.0" style="-fx-border-color: #000000;">
+               <children>
+                  <Label fx:id="p17" alignment="CENTER" contentDisplay="CENTER" prefHeight="19.0" prefWidth="48.0" rotate="-90.0" text="Label" />
+                  <ImageView fitHeight="59.0" fitWidth="63.0" pickOnBounds="true" preserveRatio="true" rotate="-90.0">
+                     <image>
+                        <Image url="@Images/Wheel_of_Fortune.png" />
+                     </image>
+                  </ImageView>
+                  <VBox prefHeight="200.0" prefWidth="7.0" />
+               </children></HBox>
+            <HBox alignment="CENTER_LEFT" prefHeight="60.7" prefWidth="200.0" style="-fx-border-color: #000000;">
+               <children>
+                  <VBox alignment="CENTER" prefHeight="59.0" prefWidth="40.0" style="-fx-background-color: #F59201; -fx-border-color: #000000;">
+                     <children>
+                        <Label style="-fx-rotate: 270;" text="10">
+                           <font>
+                              <Font size="24.0" />
+                           </font>
+                        </Label>
+                     </children></VBox>
+                  <Label fx:id="h10" alignment="CENTER" contentDisplay="CENTER" prefHeight="19.0" prefWidth="48.0" rotate="-90.0" text="Label" />
+                  <Label fx:id="p18" alignment="CENTER" contentDisplay="CENTER" layoutX="51.0" layoutY="31.0" prefHeight="19.0" prefWidth="48.0" rotate="-90.0" text="Label" />
+               </children>
+            </HBox>
+            <HBox alignment="CENTER_LEFT" prefHeight="60.7" prefWidth="134.0" style="-fx-border-color: #000000;">
+               <children>
+                  <VBox alignment="CENTER" prefHeight="59.0" prefWidth="40.0" style="-fx-background-color: #F59201; -fx-border-color: #000000;">
+                     <children>
+                        <Label style="-fx-rotate: 270;" text="11">
+                           <font>
+                              <Font size="24.0" />
+                           </font>
+                        </Label>
+                     </children></VBox>
+                  <Label fx:id="h11" alignment="CENTER" contentDisplay="CENTER" prefHeight="19.0" prefWidth="33.0" rotate="-90.0" text="Label" />
+                  <Label fx:id="p19" alignment="CENTER" contentDisplay="CENTER" layoutX="51.0" layoutY="31.0" prefHeight="19.0" prefWidth="54.0" rotate="-90.0" text="Label" />
+               </children>
+            </HBox>
+         </children></VBox>
+      <HBox layoutX="45.0" layoutY="38.0" prefHeight="136.0" prefWidth="1227.0" style="-fx-background-color: #BFDBAE; -fx-border-color: #000000; -fx-rotate: 180;">
+         <children>
+            <VBox alignment="CENTER" prefHeight="200.0" prefWidth="136.0" style="-fx-border-color: #000000;">
+               <children>
+                  <ImageView fitHeight="120.0" fitWidth="120.0" pickOnBounds="true" preserveRatio="true" rotate="45.0">
+                     <image>
+                        <Image url="@Images/GoJail.png" />
+                     </image>
+                  </ImageView>
+               </children></VBox>
+            <VBox prefHeight="115.0" prefWidth="105.0" style="-fx-border-color: #000000;">
+               <children>
+                  <HBox alignment="CENTER" prefHeight="51.0" prefWidth="106.0" style="-fx-background-color: #FFEE02; -fx-border-color: #000000;">
+                     <children>
+                        <Label text="17">
+                           <font>
+                              <Font size="24.0" />
+                           </font>
+                        </Label>
+                     </children></HBox>
+                  <Label fx:id="h17" alignment="CENTER" contentDisplay="CENTER" prefHeight="17.0" prefWidth="107.0" text="Label" />
+                  <Label fx:id="p29" alignment="CENTER" contentDisplay="CENTER" layoutX="11.0" layoutY="62.0" prefHeight="45.0" prefWidth="103.0" text="Label" />
+               </children>
+            </VBox>
+            <VBox alignment="BOTTOM_CENTER" prefHeight="200.0" prefWidth="105.8" style="-fx-border-color: #000000;">
+               <children>
+                  <Label fx:id="p28" alignment="CENTER" contentDisplay="CENTER" prefHeight="35.0" prefWidth="104.0" text="Label">
+                     <font>
+                        <Font name="Copperplate Gothic Bold" size="12.0" />
+                     </font></Label>
+                  <ImageView fitHeight="95.0" fitWidth="102.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@Images/water.gif" />
+                     </image>
+                  </ImageView>
+               </children></VBox>
+            <VBox prefHeight="200.0" prefWidth="105.8" style="-fx-border-color: #000000;">
+               <children>
+                  <HBox alignment="CENTER" prefHeight="51.0" prefWidth="106.0" style="-fx-background-color: #FFEE02; -fx-border-color: #000000;">
+                     <children>
+                        <Label text="16">
+                           <font>
+                              <Font size="24.0" />
+                           </font>
+                        </Label>
+                     </children></HBox>
+                  <Label fx:id="h16" alignment="CENTER" contentDisplay="CENTER" prefHeight="17.0" prefWidth="107.0" text="Label" />
+                  <Label fx:id="p27" alignment="CENTER" contentDisplay="CENTER" layoutX="11.0" layoutY="62.0" prefHeight="45.0" prefWidth="104.0" text="Label" />
+               </children></VBox>
+            <VBox prefHeight="200.0" prefWidth="105.8" style="-fx-border-color: #000000;">
+               <children>
+                  <HBox alignment="CENTER" prefHeight="51.0" prefWidth="106.0" style="-fx-background-color: #FFEE02; -fx-border-color: #000000;">
+                     <children>
+                        <Label text="15">
+                           <font>
+                              <Font size="24.0" />
+                           </font>
+                        </Label>
+                     </children></HBox>
+                  <Label fx:id="h15" alignment="CENTER" contentDisplay="CENTER" prefHeight="17.0" prefWidth="107.0" text="Label" />
+                  <Label fx:id="p26" alignment="CENTER" contentDisplay="CENTER" layoutX="11.0" layoutY="62.0" prefHeight="44.0" prefWidth="104.0" text="Label" />
+               </children>
+            </VBox>
+            <VBox alignment="BOTTOM_CENTER" prefHeight="200.0" prefWidth="105.8" style="-fx-border-color: #000000;">
+               <children>
+                  <Label fx:id="p25" alignment="CENTER" contentDisplay="CENTER" prefHeight="17.0" prefWidth="107.0" text="Label" />
+                  <ImageView fitHeight="95.0" fitWidth="102.0" layoutX="12.0" layoutY="50.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@Images/estacion.gif" />
+                     </image>
+                  </ImageView>
+               </children></VBox>
+            <VBox prefHeight="200.0" prefWidth="105.8" style="-fx-border-color: #000000;">
+               <children>
+                  <HBox alignment="CENTER" prefHeight="51.0" prefWidth="106.0" style="-fx-background-color: #E40A18; -fx-border-color: #000000;">
+                     <children>
+                        <Label text="14">
+                           <font>
+                              <Font size="24.0" />
+                           </font>
+                        </Label>
+                     </children></HBox>
+                  <Label fx:id="h14" alignment="CENTER" contentDisplay="CENTER" prefHeight="17.0" prefWidth="107.0" text="Label" />
+                  <Label fx:id="p24" alignment="CENTER" contentDisplay="CENTER" layoutX="11.0" layoutY="62.0" prefHeight="47.0" prefWidth="104.0" text="Label" />
+               </children></VBox>
+            <VBox prefHeight="200.0" prefWidth="105.8" style="-fx-border-color: #000000;">
+               <children>
+                  <HBox alignment="CENTER" prefHeight="51.0" prefWidth="106.0" style="-fx-background-color: #E40A18; -fx-border-color: #000000;">
+                     <children>
+                        <Label text="13">
+                           <font>
+                              <Font size="24.0" />
+                           </font>
+                        </Label>
+                     </children></HBox>
+                  <Label fx:id="h13" alignment="CENTER" contentDisplay="CENTER" prefHeight="17.0" prefWidth="107.0" text="Label" />
+                  <Label fx:id="p23" alignment="CENTER" contentDisplay="CENTER" layoutX="11.0" layoutY="62.0" prefHeight="45.0" prefWidth="104.0" text="Label" />
+               </children>
+            </VBox>
+            <VBox alignment="BOTTOM_CENTER" prefHeight="200.0" prefWidth="105.8" style="-fx-border-color: #000000;">
+               <children>
+                  <Label fx:id="p22" alignment="CENTER" contentDisplay="CENTER" prefHeight="33.0" prefWidth="104.0" text="Label" />
+                  <ImageView fitHeight="89.0" fitWidth="97.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@Images/Wheel_of_Fortune.png" />
+                     </image>
+                  </ImageView>
+                  <HBox prefHeight="7.0" prefWidth="104.0" />
+               </children></VBox>
+            <VBox alignment="TOP_CENTER" prefHeight="200.0" prefWidth="105.8" style="-fx-border-color: #000000;">
+               <children>
+                  <HBox alignment="CENTER" prefHeight="51.0" prefWidth="106.0" style="-fx-background-color: #E40A18; -fx-border-color: #000000;">
+                     <children>
+                        <Label text="12">
+                           <font>
+                              <Font size="24.0" />
+                           </font>
+                        </Label>
+                     </children></HBox>
+                  <Label fx:id="h12" alignment="CENTER" prefHeight="17.0" prefWidth="104.0" text="Label" />
+                  <Label fx:id="p21" alignment="CENTER" contentDisplay="CENTER" layoutX="49.0" layoutY="62.0" prefHeight="38.0" prefWidth="104.0" text="Label" />
+               </children>
+            </VBox>
+            <VBox alignment="CENTER" layoutX="11.0" layoutY="11.0" prefHeight="200.0" prefWidth="136.0" style="-fx-border-color: #000000;">
+               <children>
+                  <Label fx:id="p20" alignment="CENTER" contentDisplay="CENTER" prefHeight="17.0" prefWidth="107.0" text="Label" />
+                  <ImageView fitHeight="107.0" fitWidth="69.0" pickOnBounds="true" preserveRatio="true" rotate="-45.0">
+                     <image>
+                        <Image url="@Images/Parking.png" />
+                     </image>
+                  </ImageView>
+               </children></VBox>
+         </children>
+      </HBox>
+      <VBox layoutX="1136.0" layoutY="174.0" prefHeight="546.0" prefWidth="136.0" style="-fx-background-color: #BFDBAE; -fx-border-color: #000000;">
+         <children>
+            <HBox alignment="CENTER_LEFT" prefHeight="60.7" prefWidth="200.0" style="-fx-border-color: #000000;">
+               <children>
+                  <VBox alignment="CENTER" prefHeight="59.0" prefWidth="40.0" style="-fx-background-color: #01A84E; -fx-border-color: #000000;">
+                     <children>
+                        <Label style="-fx-rotate: 270;" text="18">
+                           <font>
+                              <Font size="24.0" />
+                           </font>
+                        </Label>
+                     </children></VBox>
+                  <Label fx:id="h18" alignment="CENTER" prefHeight="17.0" prefWidth="40.0" rotate="-90.0" />
+                  <Label fx:id="p31" alignment="CENTER" layoutX="51.0" layoutY="32.0" prefHeight="17.0" prefWidth="57.0" rotate="-90.0" text="Label" />
+               </children>
+            </HBox>
+            <HBox alignment="CENTER_LEFT" prefHeight="60.7" prefWidth="200.0" style="-fx-border-color: #000000;">
+               <children>
+                  <VBox alignment="CENTER" prefHeight="59.0" prefWidth="40.0" style="-fx-background-color: #01A84E; -fx-border-color: #000000;">
+                     <children>
+                        <Label prefHeight="40.0" prefWidth="33.0" style="-fx-rotate: 270;" text="19">
+                           <font>
+                              <Font size="23.0" />
+                           </font>
+                        </Label>
+                     </children></VBox>
+                  <Label fx:id="h19" alignment="CENTER" prefHeight="17.0" prefWidth="40.0" rotate="-90.0" text="Label" />
+                  <Label fx:id="p32" alignment="CENTER" prefHeight="17.0" prefWidth="57.0" rotate="-90.0" text="Label" />
+               </children>
+            </HBox>
+            <HBox alignment="CENTER_RIGHT" prefHeight="60.7" prefWidth="200.0" style="-fx-border-color: #000000;">
+               <children>
+                  <Label fx:id="p33" alignment="CENTER" prefHeight="17.0" prefWidth="57.0" rotate="-90.0" text="Label" />
+                  <ImageView fitHeight="59.0" fitWidth="63.0" pickOnBounds="true" preserveRatio="true" rotate="-90.0">
+                     <image>
+                        <Image url="@Images/Wheel_of_Fortune.png" />
+                     </image>
+                  </ImageView>
+                  <VBox prefHeight="200.0" prefWidth="7.0" />
+               </children></HBox>
+            <HBox alignment="CENTER_LEFT" prefHeight="60.7" prefWidth="200.0" style="-fx-border-color: #000000;">
+               <children>
+                  <VBox alignment="CENTER" prefHeight="59.0" prefWidth="40.0" style="-fx-background-color: #01A84E; -fx-border-color: #000000;">
+                     <children>
+                        <Label style="-fx-rotate: 270;" text="20">
+                           <font>
+                              <Font size="24.0" />
+                           </font>
+                        </Label>
+                     </children></VBox>
+                  <Label fx:id="h20" alignment="CENTER" prefHeight="17.0" prefWidth="40.0" rotate="-90.0" text="Label" />
+                  <Label fx:id="p34" alignment="CENTER" prefHeight="22.0" prefWidth="56.0" rotate="-90.0" text="Label" />
+               </children>
+            </HBox>
+            <HBox alignment="CENTER_RIGHT" prefHeight="60.7" prefWidth="200.0" style="-fx-border-color: #000000;">
+               <children>
+                  <Label fx:id="p35" alignment="CENTER" prefHeight="22.0" prefWidth="56.0" rotate="-90.0" text="Label" />
+                  <ImageView fitHeight="56.0" fitWidth="102.0" pickOnBounds="true" preserveRatio="true" style="-fx-rotate: -90;">
+                     <image>
+                        <Image url="@Images/estacion.gif" />
+                     </image>
+                  </ImageView>
+               </children></HBox>
+            <HBox alignment="CENTER_RIGHT" prefHeight="60.7" prefWidth="200.0" style="-fx-border-color: #000000;">
+               <children>
+                  <Label fx:id="p36" alignment="CENTER" prefHeight="22.0" prefWidth="56.0" rotate="-90.0" text="Label" />
+                  <ImageView fitHeight="59.0" fitWidth="63.0" pickOnBounds="true" preserveRatio="true" rotate="-90.0">
+                     <image>
+                        <Image url="@Images/Wheel_of_Fortune.png" />
+                     </image>
+                  </ImageView>
+                  <VBox prefHeight="200.0" prefWidth="7.0" />
+               </children></HBox>
+            <HBox alignment="CENTER_LEFT" prefHeight="60.7" prefWidth="200.0" style="-fx-border-color: #000000;">
+               <children>
+                  <VBox alignment="CENTER" prefHeight="59.0" prefWidth="40.0" style="-fx-background-color: #0167B2; -fx-border-color: #000000;">
+                     <children>
+                        <Label style="-fx-rotate: 270;" text="21">
+                           <font>
+                              <Font size="24.0" />
+                           </font>
+                        </Label>
+                     </children></VBox>
+                  <Label fx:id="h21" alignment="CENTER" prefHeight="17.0" prefWidth="40.0" rotate="-90.0" text="Label" />
+                  <Label fx:id="p37" alignment="CENTER" prefHeight="22.0" prefWidth="56.0" rotate="-90.0" text="Label" />
+               </children>
+            </HBox>
+            <HBox alignment="CENTER_RIGHT" prefHeight="60.7" prefWidth="200.0" style="-fx-border-color: #000000;">
+               <children>
+                  <Label fx:id="p38" alignment="CENTER" prefHeight="22.0" prefWidth="56.0" rotate="-90.0" text="Label" />
+                  <ImageView fitHeight="50.0" fitWidth="54.0" pickOnBounds="true" preserveRatio="true" style="-fx-rotate: -90;">
+                     <image>
+                        <Image url="@Images/tax.png" />
+                     </image>
+                  </ImageView>
+               </children></HBox>
+            <HBox alignment="CENTER_LEFT" prefHeight="60.7" prefWidth="134.0" style="-fx-border-color: #000000;">
+               <children>
+                  <VBox alignment="CENTER" prefHeight="59.0" prefWidth="40.0" style="-fx-background-color: #0167B2; -fx-border-color: #000000;">
+                     <children>
+                        <Label style="-fx-rotate: 270;" text="22">
+                           <font>
+                              <Font size="24.0" />
+                           </font>
+                        </Label>
+                     </children></VBox>
+                  <Label fx:id="h22" alignment="CENTER" prefHeight="17.0" prefWidth="40.0" rotate="-90.0" text="Label" />
+                  <Label fx:id="p39" alignment="CENTER" prefHeight="22.0" prefWidth="56.0" rotate="-90.0" text="Label" />
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+      <ImageView fitHeight="520.0" fitWidth="880.0" layoutX="232.0" layoutY="174.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@Images/Logo.jpg" />
+         </image>
+      </ImageView>
+      <Label layoutX="204.0" layoutY="188.0" text="Impuestos acumulados: $">
+         <font>
+            <Font name="Copperplate Gothic Bold" size="22.0" />
+         </font>
+      </Label>
+      <Label fx:id="taxes" layoutX="514.0" layoutY="187.0" prefHeight="28.0" prefWidth="119.0" text="0">
+         <font>
+            <Font name="Copperplate Gothic Bold" size="21.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

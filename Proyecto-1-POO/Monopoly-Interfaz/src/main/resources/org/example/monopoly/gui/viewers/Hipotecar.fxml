@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.monopoly.gui.controller.HipotecarController">
+   <children>
+      <HBox prefHeight="138.0" prefWidth="600.0" style="-fx-background-color: #8FBC72;">
+         <children>
+            <Label fx:id="labelTitulo" alignment="CENTER" contentDisplay="CENTER" prefHeight="139.0" prefWidth="607.0" text="Hipotecando/deshipotecando" textFill="#f2eeee">
+               <font>
+                  <Font name="Copperplate Gothic Bold" size="31.0" />
+               </font>
+            </Label>
+         </children></HBox>
+      <VBox alignment="CENTER" layoutY="138.0" prefHeight="261.0" prefWidth="600.0" spacing="10.0" style="-fx-background-color: #BFDBAE;">
+         <children>
+            <Label text="Seleccione una propiedad">
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+               <font>
+                  <Font name="Copperplate Gothic Bold" size="12.0" />
+               </font></Label>
+            <VBox alignment="CENTER" prefHeight="111.0" prefWidth="600.0">
+               <children>
+                  <ComboBox fx:id="comboBoxPropiedades" prefHeight="37.0" prefWidth="266.0" />
+                  <Label fx:id="controlSeleccion" alignment="CENTER_RIGHT" prefHeight="40.0" prefWidth="302.0" text="Campo obligatorio" textFill="#ec0606">
+                     <font>
+                        <Font name="Copperplate Gothic Bold" size="12.0" />
+                     </font>
+                  </Label>
+               </children>
+            </VBox>
+            <HBox alignment="CENTER" prefHeight="75.0" prefWidth="600.0" spacing="10.0">
+               <children>
+                  <Label prefHeight="64.0" prefWidth="170.0" text="Propiedad seleccionada:">
+                     <font>
+                        <Font name="Copperplate Gothic Bold" size="12.0" />
+                     </font></Label>
+                  <Label fx:id="propiedadSeleccionada">
+                     <font>
+                        <Font name="Copperplate Gothic Bold" size="12.0" />
+                     </font></Label>
+               </children>
+            </HBox>
+            <HBox alignment="TOP_CENTER" prefHeight="125.0" prefWidth="600.0" spacing="20.0">
+               <children>
+                  <Button fx:id="botonHipotecar" mnemonicParsing="false" onAction="#hipotecarAction" prefHeight="44.0" prefWidth="186.0" style="-fx-background-color: green;" text="Hipotecar/Deshipotecar" textFill="#f4f3f3">
+                     <font>
+                        <Font name="Copperplate Gothic Bold" size="11.0" />
+                     </font></Button>
+                  <Button fx:id="btnCancelar" mnemonicParsing="false" onAction="#cancelarAction" prefHeight="43.0" prefWidth="137.0" style="-fx-background-color: red;" text="Cancelar" textFill="#fcf7f7">
+                     <font>
+                        <Font name="Copperplate Gothic Bold" size="15.0" />
+                     </font></Button>
+               </children>
+            </HBox>
+         </children>
+         <padding>
+            <Insets top="30.0" />
+         </padding></VBox>
+   </children>
+</AnchorPane>

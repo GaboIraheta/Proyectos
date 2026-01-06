@@ -1,0 +1,128 @@
+.navbar-custom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: transparent; 
+    color: white;
+    flex-wrap: wrap;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+  }
+  
+  .navbar-logo-custom img {
+    width: 40px;
+  }
+  
+  .navbar-links-custom {
+    display: flex;
+    gap: 2rem;
+    list-style-type: none;
+    padding: 0;
+    margin-left: auto; 
+  }
+  
+  .navbar-links-custom li {
+    text-align: center; 
+  }
+  
+  .navbar-links-custom a {
+    text-decoration: none;
+    color: var(--primary-500);
+    font-family: 'Raleway',sans-serif;
+    font-size: 1rem;
+    transition: color 0.3s ease;
+  }
+  
+  .navbar-links-custom a:hover {
+    color: var(--secondary-500); 
+  }
+  
+
+  .navbar-buttons-custom {
+    display: flex;
+    gap: 1rem;
+    list-style-type: none;
+    padding: 0;
+    margin-left: auto; 
+  }
+  
+  .navbar-buttons-custom li {
+    text-align: center;
+  }
+  
+  .navbar-btn-custom {
+    font-size: 1rem;
+    background-color: var(--secondary-500);
+    color: white;
+  }
+  
+
+  .NavButtom{
+    background-color: var(--primary-50);
+    font-family: 'Raleway',sans-serif;
+    padding: 8px 16px;
+    border: 0.01em var(--primary-500) solid;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+
+  .NavButtom:hover {
+    background-color: var(--secondary-500);
+  }
+  
+  
+  .navbar-toggle-custom {
+    display: none;
+    cursor: pointer;
+  }
+
+ 
+.navbar-toggle-custom .material-icons {
+    color: var(--primary-500); 
+  }
+  
+  
+  
+  @media (max-width: 768px) {
+    .navbar-custom {
+      flex-direction: column; 
+      padding: 1rem; 
+      
+      
+    }
+  
+    .navbar-links-custom, .navbar-buttons-custom {
+      flex-direction: column; 
+      align-items: center; 
+      width: 100%; 
+    }
+  
+    .navbar-links-custom {
+      display: none; 
+      gap: 1rem;
+      text-align: center;
+    }
+  
+    .navbar-links-custom.active {
+      display: flex; 
+    }
+  
+    .navbar-buttons-custom {
+      display: none; 
+    }
+  
+    .navbar-buttons-custom.active {
+      display: flex; 
+      flex-direction: row;
+      justify-content: center;
+    }
+  
+    .navbar-toggle-custom {
+      display: block;
+      color: white;
+    }
+  }
+  

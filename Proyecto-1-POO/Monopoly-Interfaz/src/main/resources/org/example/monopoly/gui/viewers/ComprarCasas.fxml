@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.monopoly.gui.controller.ComprarCasasController">
+   <children>
+      <HBox prefHeight="112.0" prefWidth="600.0" style="-fx-background-color: #8FBC72;">
+         <children>
+            <Label alignment="CENTER" prefHeight="117.0" prefWidth="600.0" text="Comprando casas para cobrar mas" textFill="#f4f2f2">
+               <font>
+                  <Font name="Copperplate Gothic Bold" size="24.0" />
+               </font>
+            </Label>
+         </children></HBox>
+      <HBox layoutY="111.0" prefHeight="289.0" prefWidth="600.0" style="-fx-background-color: #BFDBAE;">
+         <children>
+            <VBox alignment="CENTER" prefHeight="290.0" prefWidth="374.0" spacing="15.0">
+               <children>
+                  <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="43.0" prefWidth="243.0" text="Elija una propiedad">
+                     <font>
+                        <Font name="Copperplate Gothic Bold" size="15.0" />
+                     </font></Label>
+                  <ComboBox fx:id="comboBoxPropiedades" prefHeight="35.0" prefWidth="258.0" />
+                  <HBox alignment="CENTER_LEFT" prefHeight="34.0" prefWidth="294.0">
+                     <children>
+                        <Label prefHeight="42.0" prefWidth="138.0" text="Precio de casa: ">
+                           <font>
+                              <Font name="Copperplate Gothic Bold" size="11.0" />
+                           </font>
+                           <padding>
+                              <Insets bottom="40.0" left="20.0" />
+                           </padding></Label>
+                        <Label fx:id="labelPrecioCasas" prefHeight="38.0" prefWidth="158.0">
+                           <padding>
+                              <Insets bottom="40.0" />
+                           </padding>
+                           <font>
+                              <Font name="Copperplate Gothic Bold" size="12.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </HBox>
+                  <Label fx:id="controlSeleccion" alignment="CENTER_RIGHT" prefHeight="40.0" prefWidth="279.0" text="Campo obligatorio" textFill="#e40909">
+                     <font>
+                        <Font name="Copperplate Gothic Bold" size="12.0" />
+                     </font></Label>
+               </children></VBox>
+            <VBox prefHeight="200.0" prefWidth="100.0" style="-fx-background-color: #8FBC72;" />
+            <VBox alignment="TOP_CENTER" prefHeight="290.0" prefWidth="368.0" spacing="30.0">
+               <children>
+                  <VBox prefHeight="86.0" prefWidth="287.0">
+                     <children>
+                        <Label alignment="CENTER" prefHeight="59.0" prefWidth="289.0" text="Propiedad seleccionada">
+                           <font>
+                              <Font name="Copperplate Gothic Bold" size="12.0" />
+                           </font></Label>
+                        <Label fx:id="propiedadSeleccionada" alignment="CENTER" prefHeight="42.0" prefWidth="304.0">
+                           <font>
+                              <Font name="Copperplate Gothic Bold" size="14.0" />
+                           </font></Label>
+                     </children>
+                  </VBox>
+                  <Button mnemonicParsing="false" onAction="#comprarCasaAction" prefHeight="40.0" prefWidth="165.0" style="-fx-background-color: green;" text="Comprar casa" textFill="#fffefe">
+                     <VBox.margin>
+                        <Insets />
+                     </VBox.margin>
+                     <font>
+                        <Font name="Copperplate Gothic Bold" size="15.0" />
+                     </font></Button>
+                  <Button mnemonicParsing="false" onAction="#cancelarAction" prefHeight="39.0" prefWidth="164.0" style="-fx-background-color: red;" text="Cancelar" textFill="#f4f2f2">
+                     <font>
+                        <Font name="Copperplate Gothic Bold" size="16.0" />
+                     </font></Button>
+               </children>
+               <padding>
+                  <Insets top="15.0" />
+               </padding></VBox>
+         </children></HBox>
+   </children>
+</AnchorPane>

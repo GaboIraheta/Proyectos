@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="339.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.monopoly.gui.controller.NegociarController">
+   <children>
+      <VBox alignment="CENTER" prefHeight="400.0" prefWidth="308.0" style="-fx-background-color: #8FBC72;">
+         <children>
+            <Label alignment="BOTTOM_CENTER" contentDisplay="CENTER" prefHeight="72.0" prefWidth="294.0" text="NEGOCIANDO" textFill="#f4f3f3">
+               <font>
+                  <Font name="Copperplate Gothic Bold" size="21.0" />
+               </font></Label>
+            <Label alignment="BOTTOM_CENTER" contentDisplay="CENTER" prefHeight="63.0" prefWidth="298.0" text="Escoja el jugador con el que desea negociar" textAlignment="CENTER" textFill="#efecec" textOverrun="CLIP">
+               <font>
+                  <Font name="Copperplate Gothic Bold" size="11.0" />
+               </font></Label>
+            <HBox alignment="CENTER" prefHeight="73.0" prefWidth="308.0">
+               <children>
+                  <ChoiceBox fx:id="choiceBoxPlayers" prefHeight="36.0" prefWidth="238.0" />
+               </children>
+            </HBox>
+            <Label fx:id="labelCampo1" prefHeight="45.0" prefWidth="283.0" text="Campo obligatorio" textFill="#f20404">
+               <font>
+                  <Font name="Copperplate Gothic Bold" size="12.0" />
+               </font></Label>
+            <VBox alignment="TOP_CENTER" prefHeight="187.0" prefWidth="308.0" spacing="20.0">
+               <children>
+                  <Label alignment="BOTTOM_CENTER" contentDisplay="CENTER" prefHeight="43.0" prefWidth="300.0" text="Propiedad por la que desea ofertar" textFill="#f4f0f0">
+                     <font>
+                        <Font name="Copperplate Gothic Bold" size="12.0" />
+                     </font></Label>
+                  <ComboBox fx:id="comboBoxPropiedades" onDragExited="#preventiveMethod" onMouseDragExited="#preventiveMethod" prefHeight="37.0" prefWidth="242.0" />
+                  <HBox alignment="CENTER" prefHeight="42.0" prefWidth="308.0">
+                     <children>
+                        <Label fx:id="labelCampo2" prefHeight="56.0" prefWidth="287.0" text="Campo obligatorio" textFill="#f70808">
+                           <font>
+                              <Font name="Copperplate Gothic Bold" size="12.0" />
+                           </font></Label>
+                     </children>
+                  </HBox>
+               </children>
+            </VBox>
+         </children></VBox>
+      <VBox alignment="CENTER_RIGHT" layoutX="302.0" prefHeight="400.0" prefWidth="298.0" style="-fx-background-color: #BFDBAE;">
+         <children>
+            <VBox alignment="TOP_RIGHT" prefHeight="100.0" prefWidth="298.0">
+               <children>
+                  <HBox alignment="CENTER" prefHeight="109.0" prefWidth="298.0">
+                     <children>
+                        <Label fx:id="Oferta" prefHeight="33.0" prefWidth="66.0" text="Oferta:">
+                           <font>
+                              <Font name="Copperplate Gothic Bold" size="12.0" />
+                           </font></Label>
+                        <TextField fx:id="textFieldOferta" prefHeight="26.0" prefWidth="159.0" />
+                     </children>
+                  </HBox>
+                  <Label fx:id="labelCampo3" contentDisplay="CENTER" prefHeight="26.0" prefWidth="282.0" text="Campo obligatorio" textFill="#ff0606">
+                     <font>
+                        <Font name="Copperplate Gothic Bold" size="12.0" />
+                     </font></Label>
+               </children>
+            </VBox>
+            <VBox alignment="BOTTOM_CENTER" prefHeight="245.0" prefWidth="308.0">
+               <children>
+
+                  <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+                     <children>
+                        <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="50.0" prefWidth="129.0" text="Jugador ofertado:">
+                           <font>
+                              <Font name="Copperplate Gothic Bold" size="12.0" />
+                           </font></Label>
+                        <Label fx:id="labelJugadorOfertado" alignment="CENTER" contentDisplay="CENTER" prefHeight="36.0" prefWidth="111.0">
+                           <font>
+                              <Font name="Copperplate Gothic Bold" size="12.0" />
+                           </font></Label>
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+                     <children>
+                        <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="34.0" prefWidth="146.0" text="Propiedad:">
+                           <font>
+                              <Font name="Copperplate Gothic Bold" size="12.0" />
+                           </font></Label>
+                        <Label fx:id="labelPropiedad" prefHeight="32.0" prefWidth="113.0" />
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+                     <children>
+                        <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="34.0" prefWidth="145.0" text="Oferta:">
+                           <font>
+                              <Font name="Copperplate Gothic Bold" size="12.0" />
+                           </font></Label>
+                        <Label fx:id="labelOferta" prefHeight="30.0" prefWidth="125.0" />
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER" prefHeight="113.0" prefWidth="298.0" spacing="20.0">
+                     <children>
+                        <Button mnemonicParsing="false" onAction="#aceptarAction" prefHeight="33.0" prefWidth="72.0" style="-fx-background-color: green;" text="Aceptar" textFill="#faf7f7">
+                           <font>
+                              <Font name="Copperplate Gothic Bold" size="11.0" />
+                           </font></Button>
+                        <Button mnemonicParsing="false" onAction="#rechazarAction" prefHeight="32.0" prefWidth="70.0" style="-fx-background-color: red;" text="Rechazar" textFill="#fcf8f8">
+                           <font>
+                              <Font name="Copperplate Gothic Bold" size="10.0" />
+                           </font></Button>
+                        <Button mnemonicParsing="false" onAction="#cancelarAction" prefHeight="33.0" prefWidth="65.0" style="-fx-background-color: orange;" text="Cancelar" textFill="#f7f4f4">
+                           <font>
+                              <Font name="Copperplate Gothic Bold" size="9.0" />
+                           </font></Button>
+                     </children>
+                  </HBox>
+               </children>
+            </VBox>
+         </children></VBox>
+   </children>
+</AnchorPane>

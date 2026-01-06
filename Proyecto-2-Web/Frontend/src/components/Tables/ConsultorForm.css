@@ -1,0 +1,33 @@
+.consultor-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.consultor-form input {
+  padding: 10px;
+  font-size: 14px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.consultor-form-buttons {
+  display: flex;
+  justify-content: space-between;
+}
+
+.consultor-form button {
+  padding: 10px 15px;
+  background-color: var(--secondary-700);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.consultor-form button:hover {
+  opacity: 0.9;
+}

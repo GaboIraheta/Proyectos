@@ -1,0 +1,26 @@
+[
+    {
+        "name": 1,
+        "image": "../../assets/servicio.jpg",
+        "title": "Slide 1",
+        "description": "Descripción del primer slide."
+    },
+    {
+        "name": 2,
+        "image": "../../assets/serviciouno.jpg",
+        "title": "Slide 2",
+        "description": "Descripción del segundo slide."
+    },
+    {
+        "name": 3,
+        "image": "../../assets/serviciouno.jpg",
+        "title": "Slide 3",
+        "description": "Descripción del tercer slide."
+    },
+    {
+        "name": 3,
+        "image": "../../assets/serviciouno.jpg",
+        "title": "Slide 3",
+        "description": "Descripción del tercer slide."
+    }
+]

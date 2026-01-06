@@ -1,0 +1,935 @@
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+
+    .encabezado {
+        display: flex;
+        flex-direction: row;
+        gap: 7em;
+        height: 6em;
+        width: 100%;
+        padding-top: 1.5em;
+        padding-left: 10em;
+        background-color: rgba(0, 0, 0, 0.8);
+        position: fixed;
+        z-index: 3;
+        position: fixed;
+    }
+
+    .logotipo {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        gap: 0.5em;
+        width: 6em;
+        height: 6em;
+    }
+    
+    .logotipo img {
+        width: 3em;
+        height: 3em;
+        filter: invert(100%) brightness(1000%);
+        filter: invert(100%) brightness(1000%) drop-shadow(2px 4px 6px rgba(0, 0, 0, 0.5));
+    }
+    
+    .logotipo h3 {
+        color: white;
+        font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        padding-top: 0.2em;
+    }
+
+    nav {
+        display: flex;
+        flex-direction: row;
+        gap: 2em;
+    }
+    
+    nav a {
+        text-decoration: none;
+        color: rgba(255, 255, 0, 0.8);
+        font-size: 1.2em;
+        font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        position: relative;
+    }
+    
+    nav a::after {
+        content: "";
+        position: absolute;
+        width: 0.5em;
+        height: 0.1em;
+        background-color: white;
+        display: block;
+        bottom: 2.3rem;
+        transition: all 0.5s ease;
+        transform: translateX(-50%);
+        left: 50%;
+        border-radius: 2em;
+    }
+    
+    nav a:hover::after {
+        width: 100%;
+    }
+
+    .call-action {
+        width: 180vh;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        padding-left: 3.5rem;
+        gap: 5em;
+        align-items: center;
+        position: relative;
+        background-color: rgba(0, 0, 0, 0.5);
+        z-index: 2;
+    }
+    
+    .overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 180vh;
+        height: 100vh;
+        opacity: 0.8;
+        z-index: 1;
+        background-image: url(../resources/image.1592429880498.avif);
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .call-action .info {
+        padding-top: 10em;
+        display: flex;
+        flex-direction: column;
+        gap: 2em;
+        align-items: center;
+        position: relative;
+        z-index: 2;
+        transform: translateX(-6%);
+    }
+
+    .call-action h1,
+    .call-action p {
+        color: white;
+        font-size: 3em;
+        font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        text-shadow: 1px 5px 5px black;
+    }
+
+    .call-action .info .logo-title img {
+        width: 10em;
+        height: 10em;
+        filter: invert(100%) brightness(1000%) drop-shadow(2px 4px 6px rgba(0, 0, 0, 0.5));
+    }
+
+    .logo-title {
+        display: flex;
+        flex-direction: row;
+        gap: 0.5em;
+        align-items: center;
+    }
+
+    .call-action button {
+        width: 10em;
+        height: 2.5em;
+        color: white;
+        font-size: 1.5rem;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        border-radius: 1em;
+        background-color: rgba(39, 42, 44, 0.5);
+        border: 3px solid rgba(255, 255, 0, 1);
+        box-shadow: 1px 1px 10px #000;
+        position: relative;
+        z-index: 2;
+        cursor: pointer;
+        transition: background-color 0.3s, transform 0.3s;
+    }
+    
+    .call-action button:hover {
+        background-color: transparent;
+        transform: scale(0.98);
+        text-shadow: 1px 1px 5px black;
+    }
+
+    .beneficios {
+        height: 100vh;
+        width: 180vh;
+        background: transparent;
+        background-color: transparent;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 1em;
+        background-color: rgba(0,0,0,0.1);
+        padding-left: 4.5em;
+    }
+
+    .beneficios .title h1 {
+        font-size: 2em;
+        font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        color: rgba(255, 255, 0, 0.9);
+        z-index: 2;
+        text-shadow: 1px 2px 1px black;
+    }
+
+    .beneficios .seccion-1 {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 3em;
+        position: relative;
+    }
+    
+    .beneficios .title {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 2.5em;
+    }
+    
+    .beneficios .title img {
+        width: 38%;
+        height: 38%;
+    }
+
+    .beneficios .seccion-1 .div-1 {
+        background-image: url(../resources/80b1688185af6f449344d7a35db8ed5c.jpg);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+    .beneficios .seccion-1 .div-2 {
+        background-image: url(../resources/diverso-sushi-cuchillo-japones-fondo-negro-pizarra-piedra-sushi-mesa_8353-6056.avif);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+    .beneficios .seccion-1 .div-1,
+    .beneficios .seccion-1 .div-2 {
+        transform: translateX(-9.5%);
+    }
+    
+    .beneficios .seccion-1 div ul {
+        box-shadow: 1px 3px 5px black;
+        border-radius: 0.3em;
+        padding: 1em;
+        width: 32em;
+        height: 22em;
+        display: flex;
+        flex-direction: column;
+        gap: 1em;
+        align-items: center;
+        list-style-type: circle;
+        transition: all 0.5s ease;
+        background-color: rgba(0, 0, 0, 0.5);
+        font-size: 0.9rem;
+        padding-top: 2.5em;
+    }
+
+    .beneficios .seccion-1 div ul:hover {
+        transform: scale(1.02);
+        background-image: none;
+        background-color: rgba(0, 0, 0, 0.7);
+    }
+    
+    .beneficios .seccion-1 div ul li {
+        text-align: center;
+        font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        color: rgba(255, 255, 255, 1);
+        text-shadow: 1px 1px 5px black;
+    }
+
+    .beneficios .seccion-1 div ul li strong {
+        color: rgba(255, 255, 0, 1);
+        text-shadow: 1px 1px 3px black;
+    }
+
+    .overlay2 {
+        background-image: url(../resources/image.1592429880498.avif);
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 100vh;
+        width: 180vh;
+        position: relative;
+        z-index: 1;
+    }
+
+    .overlay2 .caracteristicas {
+        background-color: rgba(0, 0, 0, 0.5);
+        position: absolute;
+        z-index: 2;
+        width: 100%;
+        height: 100%;
+        align-items: center;
+        padding-top: 4em;
+        display: flex;
+        flex-direction: column;
+        gap: 2em;
+    }
+
+    .overlay2 .caracteristicas .title {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        height: 8em;
+    }
+
+    .overlay2 .caracteristicas .title h1 {
+        font-size: 2.5em;
+        font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        color: rgba(255, 255, 255, 0.9);
+        z-index: 2;
+        text-shadow: 1px 2px 1px black;
+        text-align: center;
+        line-height: 1.5;
+    }
+
+    .overlay2 .caracteristicas .title img {
+        width: 70%;
+        height: 70%;
+        display: inline-block;
+        vertical-align: middle;
+        filter: invert(100%) brightness(1000%) drop-shadow(2px 4px 6px rgba(0, 0, 0, 0.5));
+    }
+
+    .overlay2 .caracteristicas .grid {
+        display: grid;
+        grid-template-columns: minmax(0, 1fr) minmax(0, 1fr) minmax(0, 1fr);
+        grid-template-rows: minmax(0, 1fr) minmax(0, 1fr);
+        gap: 1.8rem;
+        box-shadow: 1px 1px 10px black;
+        padding: 1em;
+        border-radius: 0.5em;
+        height: 22em;
+        width: 60em;
+    }
+
+    .overlay2 .caracteristicas .grid .characteristic-1 {
+        grid-column: 1;
+        grid-row: 1;
+        position: relative;
+        padding-top: 1.3rem;
+        font-size: 0.7rem;
+    }
+
+    .overlay2 .caracteristicas .grid .characteristic-1:hover {
+        transition: transform 0.5s ease;
+        transform: scale(1.02);
+    }
+
+    .overlay2 .caracteristicas .grid .characteristic-1::after {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        display: block;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        z-index: 2;
+        content: "Acero inoxidable de alta calidad";
+        align-content: center;
+        text-shadow: 2px 2px 10px black;
+        color: yellow;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-size: 1.5rem;
+        background-image: url(../resources/81hHwP8O10L.jpg);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        border-radius: 0.5rem;
+        padding-left: 0.2rem;
+    }
+
+    .overlay2 .caracteristicas .grid .characteristic-1:hover::after {
+        display: none;
+    }
+
+    .overlay2 .caracteristicas .grid .characteristic-2 {
+        grid-column: 2;
+        grid-row: 1;
+        position: relative;
+        padding-top: 2rem;
+        font-size: 0.7em;
+    }
+
+    .overlay2 .caracteristicas .grid .characteristic-2:hover {
+        transition: transform 0.5s ease;
+        transform: scale(1.02);
+    }
+
+    .overlay2 .caracteristicas .grid .characteristic-2::after {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        display: block;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        z-index: 2;
+        content: "Diseño ergonómico para mayor comodidad";
+        align-content: center;
+        text-shadow: 2px 2px 10px black;
+        color: white;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-size: 1.5rem;
+        background-image: url(../resources/81v1wnK-XBL._AC_UF894\,1000_QL80_.jpg);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        border-radius: 0.5rem;
+    }
+
+    .overlay2 .caracteristicas .grid .characteristic-2:hover::after {
+        display: none;
+    }
+
+    .overlay2 .caracteristicas .grid .characteristic-3 {
+        grid-column: 3;
+        grid-row: 1;
+        position: relative;
+        padding-top: 2.1rem;
+        font-size: 0.7em;
+    }
+
+    .overlay2 .caracteristicas .grid .characteristic-3:hover {
+        transition: transform 0.5s ease;
+        transform: scale(1.02);
+    }
+
+    .overlay2 .caracteristicas .grid .characteristic-3::after {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        display: block;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        z-index: 2;
+        content: "Filo de precision para cortes impecables";
+        align-content: center;
+        font-size: 2.7rem;
+        text-shadow: 2px 2px 10px black;
+        color: white;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-size: 1.7rem;
+        background-image: url(../resources/722437936_229130428_1706x1280.jpg);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        border-radius: 0.5rem;
+        padding: 0.1rem;
+    }
+
+    .overlay2 .caracteristicas .grid .characteristic-3:hover::after {
+        display: none;
+    }
+
+    .overlay2 .caracteristicas .grid .characteristic-4 {
+        grid-column: 1;
+        grid-row: 2;
+        position: relative;
+        padding-top: 2.8em;
+        font-size: 0.7rem;
+    } 
+
+    .overlay2 .caracteristicas .grid .characteristic-4:hover {
+        transition: transform 0.5s ease;
+        transform: scale(1.02);
+    }
+
+    .overlay2 .caracteristicas .grid .characteristic-4::after {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        display: block;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        z-index: 2;
+        content: "Variedad de cuchillos para diferentes usos";
+        align-content: center;
+        font-size: 1.4rem;
+        text-shadow: 2px 2px 10px black;
+        color: yellow;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        background-image: url(../resources/SC-0029-3.jpg);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        border-radius: 0.5rem;
+        padding: 0.1rem;
+    }
+
+    .overlay2 .caracteristicas .grid .characteristic-4:hover::after {
+        display: none;
+    }
+
+    .overlay2 .caracteristicas .grid .characteristics-5 {
+        grid-column: 2;
+        grid-row: 2;
+        position: relative;
+        padding-top: 2rem;
+        font-size: 0.7rem;
+    }
+
+    .overlay2 .caracteristicas .grid .characteristics-5:hover {
+        transition: transform 0.5s ease;
+        transform: scale(1.02);
+    }
+
+    .overlay2 .caracteristicas .grid .characteristics-5::after {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        display: block;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        z-index: 2;
+        content: "Facil mantenimiento y afilado";
+        align-content: center;
+        font-size: 1.5rem;
+        text-shadow: 2px 2px 10px black;
+        color: white;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        background-image: url(../resources/81guH20GxWL._AC_UF350\,350_QL80_.jpg);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        border-radius: 0.5rem;
+        padding: 0.1rem;
+    }
+
+    .overlay2 .caracteristicas .grid .characteristics-5:hover::after {
+        display: none;
+    }
+
+    .overlay2 .caracteristicas .grid .characteristics-6 {
+        grid-column: 3;
+        grid-row: 2;
+        position: relative;
+        padding-top: 2.5rem;
+        font-size: 0.7rem;
+    }
+
+    .overlay2 .caracteristicas .grid .characteristics-6:hover {
+        transition: transform 0.5s ease;
+        transform: scale(1.02);
+    }
+
+    .overlay2 .caracteristicas .grid .characteristics-6::after {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        display: block;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        z-index: 2;
+        content: "Diseño estético y elegante";
+        align-content: center;
+        font-size: 1.7rem;
+        text-shadow: 2px 2px 10px black;
+        color: white;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        background-image: url(../resources/61lHxc9lCaL.jpg);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        border-radius: 0.5rem;
+        padding: 0.1rem;
+        padding: 0.1rem;
+    }
+
+    .overlay2 .caracteristicas .grid .characteristics-6:hover::after {
+        display: none;
+    }
+
+    .overlay2 .caracteristicas .grid article {
+        box-shadow: 1px 1px 5px black;
+        border-radius: 0.5rem;
+        color: aliceblue;
+        padding-left: 1em;
+        padding-right: 1em;
+        text-align: center;
+        line-height: 1.5;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        z-index: 1;
+        background-color: rgba(0, 0, 0, 0.5);
+    }
+
+    .testimonios {
+        height: 100vh;
+        width: 180vh;
+        background-image: url(../resources/91Bk8ILp3QL.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        padding-top: 1em;
+        align-content: center;
+        display: flex;
+        flex-direction: column;
+        padding-left: 1.7em;
+        justify-content: center;
+        align-items: center;
+        gap: 1em;
+    }
+
+    .testimonios .title {
+        display: flex;
+        flex-direction: column;
+        gap: 1em;
+        align-items: center;
+    }
+
+    .testimonios .title img {
+        width: 5em;
+        height: 5em;
+        filter: invert(100%) brightness(1000%) drop-shadow(2px 4px 6px rgba(0, 0, 0, 0.5));
+    }
+
+    .testimonios .title h1 {
+        color: yellow;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-size: 2.5em;
+        text-shadow: 1px 1px 5px black;
+    }
+
+    .testimonios .slider-inner {
+        overflow: hidden;
+        width: 40em;
+        height: 25em;
+        background-image: url(../resources/91Bk8ILp3QL.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        border-radius: 0.5rem;
+    }
+
+    .testimonios .slider {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        width: 125em;
+        height: 25em;
+        gap: 1em;
+        box-shadow: 1px 5px 10px black;
+    }
+
+    .testimonios .slider .profile {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 1em;
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+        color: white;
+        text-shadow: 2px 2px 5px black;
+        line-height: 1.5;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        border-right: 1px solid yellow;
+        padding-top: 1em;
+        padding-bottom: 1em;
+        font-size: 1.2em;
+        background-color: rgba(0, 0, 0, 0.5);
+    }
+
+    .testimonios .slider .profile cite {
+        color: yellow;
+        padding-bottom: 0.5rem;
+        border-bottom: 1px solid yellow;
+    }
+
+    .testimonios .slider .profile:last-child {
+        border-right: none;
+    }
+
+    .testimonios .slider .profile img {
+        width: 3em;
+        height: 3em;
+        filter: invert(100%) brightness(1000%) drop-shadow(2px 4px 6px rgba(0, 0, 0, 0.5));
+    }
+
+    .footer {
+        background-image: url(../resources/81hHwP8O10L.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 180vh;
+        height: 88.5vh;
+    }
+
+    .footer blockquote {
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.5);
+        padding: 8em;
+        padding-top: 2.5em;
+        align-content: center;
+        display: grid;
+        grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+        grid-template-rows: minmax(0, 1fr) minmax(0, 1fr) minmax(0, 1fr);
+        gap: 0.1rem;
+        padding-left: 10em;
+    }
+
+    .footer blockquote .media {
+        grid-column: 1 / 3;
+        grid-row: 1;
+        text-align: center;
+        width: 100%;
+        height: 4em;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .footer blockquote .media a {
+        color: white;
+        border-left: 1px solid yellow;
+        padding: 1rem;
+        text-decoration: none;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-size: 1.3em;
+        height: 3rem;
+        display: flex;
+        flex-direction: row;
+        gap: 1rem;
+        justify-content: center;
+        padding-left: 3em;
+        padding-right: 3em;
+        padding-bottom: 2.2em;
+    }
+
+    .footer blockquote .media a:hover {
+        background-color: rgba(255, 255, 0, 0.5);
+    }
+
+    .footer blockquote .media a img {
+        width: 2rem;
+        height: 2rem;
+        filter: invert(100%) brightness(1000%) drop-shadow(2px 4px 6px rgba(0, 0, 0, 0.5));
+    }
+
+    .footer blockquote .media a:last-child {
+        border-right: 1px solid yellow;
+    }
+
+    .footer blockquote .contact-us {
+        grid-column: 1 / 3;
+        grid-row: 2;
+        text-align: center;
+        width: 100%;
+        height: 4em;
+        align-content: center;
+    }
+
+    .footer blockquote .contact-us a {
+        color: white;
+        font-size: 2em;
+        outline: 1px solid yellow;
+        padding: 1rem;
+        border-radius: 1rem;
+        text-decoration: none;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+    
+    .footer blockquote .contact-us a:hover {
+        background-color:  rgba(255, 255, 0, 0.5);
+        color: black;
+        text-shadow: 0px 0px 1px black;
+    }
+
+    .footer blockquote .terms-conditions {
+        grid-column: 1;
+        grid-row: 3;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1.5rem;
+    }
+
+    .footer blockquote .terms-conditions h3 {
+        color: yellow;
+        font-size: 1.3em;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        text-shadow: 5px 5px 10px black;
+    }
+
+    .footer blockquote .terms-conditions ul {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .footer blockquote .terms-conditions ul li {
+        list-style: none;
+        color: white;
+        font-size: 1em;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        text-align: center;
+        line-height: 1.3;
+        text-shadow: 2px 2px 5px black;
+    }
+
+    .footer blockquote .politics {
+        grid-column: 2;
+        grid-row: 3;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1.5rem;
+    }
+
+    .footer blockquote .politics h3 {
+        color: yellow;
+        font-size: 1.3em;
+        font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        text-shadow: 5px 5px 10px black;
+    }
+    
+    .footer blockquote .politics ul {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .footer blockquote .politics ul li {
+        list-style: none;
+        color: white;
+        font-size: 1em;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        text-align: center;
+        line-height: 1.3;
+        text-shadow: 2px 2px 5px black;
+    }
+
+    .contact-us-modal {
+        display: none; 
+        position: fixed;
+        z-index: 1000;
+        left: 10%;
+        bottom: 5%;
+        width: 80%;
+        height: 80%;
+        justify-content: center;
+        align-items: center;
+        background-image: url(../resources/81hHwP8O10L.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+    
+    .contact-us-modal .content {
+        background-color: rgba(0, 0, 0, 0.5);
+        padding: 2rem;
+        border-radius: 10px;
+        width: 80%;
+        max-width: 500px;
+        text-align: center;
+        box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+        display: flex;
+        flex-direction: column;
+        gap: 2em;
+    }
+
+    .contact-us-modal .content h2 {
+        color: white;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+
+    .contact-us-modal .content .contact-form {
+        display: flex;
+        flex-direction: column;
+        gap: 0.2rem;
+    }
+
+    .contact-us-modal .content .contact-form label {
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-size: 1.5em;
+        color: yellow;
+        text-shadow: 1px 5px 10px black;
+    }
+
+    .contact-us-modal .content .contact-form input {
+        width: 50%;
+        transform: translateX(50%);
+        height: 2.5em;
+        background-color: transparent;
+        border-radius: 5px;
+        border: 1px solid white;
+        color: white;
+        font-family: 'Courier New', Courier, monospace;
+    }
+
+    .contact-us-modal .content .contact-form button {
+        width: 30%;
+        height: 2em;
+        transform: translateX(120%);
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-size: 1.1rem;
+        color: white;
+        border: 1px solid yellow;
+        border-radius: 1em;
+        cursor: pointer;
+        border-radius: 1em;
+        background-color: #272a2c;
+        text-shadow: 2px 2px 3px black;
+    }
+
+    .contact-us-modal .content .contact-form button:hover {
+        background-color: rgba(0, 0, 0, 0.5);
+        color: yellow;
+
+    }
+
+    .contact-us-modal .content .btn-close {
+        padding-top: 0.2em;
+        padding-right: 6.4em;
+        position: absolute;
+        top: 0.1em;
+        left: 7.9em;
+        font-size: 5em;
+        font-weight: bold;
+        color: yellow; /* Cambia el color a algo visible */
+        cursor: pointer;
+        z-index: 10;
+    }
+
+    .contact-us-modal .content .contact-form textarea {
+        width: 75%;
+        padding: 0.5em;
+        margin: 0.5em 0;
+        border-radius: 5px;
+        border: 1px solid #ddd;
+        transform: translateX(20%);
+        background-color: transparent;
+        color: white;
+    }
+
+    .contact-us-modal .content .contact-form .error {
+        color: red;
+        font-size: 0.8em;
+        display: none;
+        font-size: 1rem;
+        padding: 0.5rem;
+    }
+
+}

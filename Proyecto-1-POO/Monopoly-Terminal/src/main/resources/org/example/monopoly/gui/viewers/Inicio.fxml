@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="894.0" prefWidth="1610.0" style="-fx-background-color: #8FBC72;" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.monopoly.gui.controller.InicioController">
+   <children>
+      <ImageView fitHeight="439.0" fitWidth="820.0" layoutX="471.0" layoutY="-20.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@Images/Logo.jpg" />
+         </image>
+      </ImageView>
+      <VBox alignment="TOP_CENTER" layoutX="455.0" layoutY="396.0" prefHeight="454.0" prefWidth="701.0">
+         <children>
+            <Label text="Elija la cantidad de jugadores:" textFill="WHITE">
+               <font>
+                  <Font name="Copperplate Gothic Bold" size="30.0" />
+               </font>
+            </Label>
+            <HBox prefHeight="33.0" prefWidth="701.0" />
+            <Button fx:id="players2" mnemonicParsing="false" onAction="#P2ButtonPressed" prefHeight="49.0" prefWidth="330.0" style="-fx-background-color: #ED1D24;" text="2 Jugadores" textFill="WHITE">
+               <font>
+                  <Font name="Copperplate Gothic Bold" size="26.0" />
+               </font>
+            </Button>
+            <HBox layoutX="10.0" layoutY="44.0" prefHeight="33.0" prefWidth="701.0" />
+            <Button fx:id="players3" layoutX="196.0" layoutY="77.0" mnemonicParsing="false" onAction="#P3ButtonPressed" prefHeight="49.0" prefWidth="330.0" style="-fx-background-color: #FFFFFF;" text="3 Jugadores">
+               <font>
+                  <Font name="Copperplate Gothic Bold" size="26.0" />
+               </font>
+            </Button>
+            <HBox layoutX="10.0" layoutY="126.0" prefHeight="33.0" prefWidth="701.0" />
+            <Button fx:id="players4" layoutX="196.0" layoutY="159.0" mnemonicParsing="false" onAction="#P4ButtonPressed" prefHeight="49.0" prefWidth="330.0" style="-fx-background-color: #ED1D24;" text="4 Jugadores" textFill="WHITE">
+               <font>
+                  <Font name="Copperplate Gothic Bold" size="26.0" />
+               </font>
+            </Button>
+            <HBox layoutX="10.0" layoutY="44.0" prefHeight="33.0" prefWidth="701.0" />
+            <Button fx:id="players5" layoutX="196.0" layoutY="77.0" mnemonicParsing="false" onAction="#P5ButtonPressed" prefHeight="49.0" prefWidth="330.0" style="-fx-background-color: #FFFFFF;" text="5 Jugadores">
+               <font>
+                  <Font name="Copperplate Gothic Bold" size="26.0" />
+               </font>
+            </Button>
+            <HBox layoutX="10.0" layoutY="290.0" prefHeight="33.0" prefWidth="701.0" />
+            <Button fx:id="players6" layoutX="196.0" layoutY="77.0" mnemonicParsing="false" onAction="#P6ButtonPressed" prefHeight="49.0" prefWidth="330.0" style="-fx-background-color: #ED1D24;" text="6 Jugadores" textFill="WHITE">
+               <font>
+                  <Font name="Copperplate Gothic Bold" size="26.0" />
+               </font>
+            </Button>
+         </children>
+      </VBox>
+      <VBox alignment="TOP_CENTER" layoutX="1182.0" layoutY="128.0" prefHeight="738.0" prefWidth="321.0">
+         <children>
+            <Label fx:id="p1" alignment="CENTER" prefHeight="24.0" prefWidth="324.0" text="Jugador 1">
+               <font>
+                  <Font name="Copperplate Gothic Bold" size="21.0" />
+               </font></Label>
+            <HBox prefHeight="28.0" prefWidth="321.0" />
+            <TextField fx:id="txtF1" onMouseExited="#showStart">
+               <font>
+                  <Font name="Copperplate Gothic Bold" size="15.0" />
+               </font></TextField>
+            <HBox layoutX="10.0" layoutY="27.0" prefHeight="28.0" prefWidth="321.0" />
+            <Label fx:id="p2" layoutX="157.0" layoutY="10.0" text="Jugador 2">
+               <font>
+                  <Font name="Copperplate Gothic Bold" size="21.0" />
+               </font>
+            </Label>
+            <HBox layoutX="10.0" layoutY="27.0" prefHeight="28.0" prefWidth="321.0" />
+            <TextField fx:id="txtF2" layoutX="10.0" layoutY="55.0" onMouseExited="#showStart">
+               <font>
+                  <Font name="Copperplate Gothic Bold" size="15.0" />
+               </font></TextField>
+            <HBox layoutX="10.0" layoutY="80.0" prefHeight="28.0" prefWidth="321.0" />
+            <Label fx:id="p3" layoutX="157.0" layoutY="108.0" text="Jugador 3">
+               <font>
+                  <Font name="Copperplate Gothic Bold" size="21.0" />
+               </font></Label>
+            <HBox layoutX="10.0" layoutY="125.0" prefHeight="28.0" prefWidth="321.0" />
+            <TextField fx:id="txtF3" layoutX="10.0" layoutY="153.0" onMouseExited="#showStart">
+               <font>
+                  <Font name="Copperplate Gothic Bold" size="15.0" />
+               </font></TextField>
+            <HBox layoutX="10.0" layoutY="223.0" prefHeight="28.0" prefWidth="321.0" />
+            <Label fx:id="p4" layoutX="157.0" layoutY="206.0" text="Jugador 4">
+               <font>
+                  <Font name="Copperplate Gothic Bold" size="21.0" />
+               </font></Label>
+            <HBox layoutX="10.0" layoutY="178.0" prefHeight="28.0" prefWidth="321.0" />
+            <TextField fx:id="txtF4" layoutX="10.0" layoutY="153.0" onMouseExited="#showStart">
+               <font>
+                  <Font name="Copperplate Gothic Bold" size="15.0" />
+               </font></TextField>
+            <HBox layoutX="10.0" layoutY="321.0" prefHeight="28.0" prefWidth="321.0" />
+            <Label fx:id="p5" layoutX="157.0" layoutY="304.0" text="Jugador 5">
+               <font>
+                  <Font name="Copperplate Gothic Bold" size="21.0" />
+               </font></Label>
+            <HBox layoutX="10.0" layoutY="321.0" prefHeight="28.0" prefWidth="321.0" />
+            <TextField fx:id="txtF5" layoutX="10.0" layoutY="349.0" onMouseExited="#showStart">
+               <font>
+                  <Font name="Copperplate Gothic Bold" size="15.0" />
+               </font></TextField>
+            <HBox layoutX="10.0" layoutY="276.0" prefHeight="28.0" prefWidth="321.0" />
+            <Label fx:id="p6" layoutX="157.0" layoutY="304.0" text="Jugador 6">
+               <font>
+                  <Font name="Copperplate Gothic Bold" size="21.0" />
+               </font></Label>
+            <HBox layoutX="10.0" layoutY="321.0" prefHeight="28.0" prefWidth="321.0" />
+            <TextField fx:id="txtF6" layoutX="10.0" layoutY="349.0" onMouseExited="#showStart">
+               <font>
+                  <Font name="Copperplate Gothic Bold" size="15.0" />
+               </font></TextField>
+            <HBox layoutX="10.0" layoutY="574.0" prefHeight="28.0" prefWidth="321.0" />
+            <Button fx:id="startButton" mnemonicParsing="false" onAction="#startGame" prefHeight="46.0" prefWidth="224.0" style="-fx-background-color: #22B14C;" text="Empezar">
+               <font>
+                  <Font name="Copperplate Gothic Bold" size="29.0" />
+               </font>
+            </Button>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>
