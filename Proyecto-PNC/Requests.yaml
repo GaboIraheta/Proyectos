@@ -1,0 +1,2301 @@
+type: spec.insomnia.rest/5.0
+schema_version: "5.1"
+name: Warehouse Inventory API 1.0.0
+meta:
+  id: wrk_0ebb7d847a9a4771ac518deac5c29a6b
+  created: 1782697991018
+  modified: 1782697991018
+  description: ""
+collection:
+  - url: "{{ _.base_url }}/api/warehouse/:id"
+    name: /api/warehouse/{id}
+    meta:
+      id: req_f67dbae8845a475eb61e80926aa44e77
+      created: 1782697991032
+      modified: 1782697991032
+      isPrivate: false
+      description: ""
+      sortKey: -1782697991032
+    method: GET
+    authentication:
+      type: apikey
+      key: access_token
+      value: "{{ _.accessToken }}"
+      addTo: cookie
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+  - url: "{{ _.base_url }}/api/warehouse/:id"
+    name: /api/warehouse/{id}
+    meta:
+      id: req_e58b79ce71ba4564a2472dae93b84a77
+      created: 1782697991033
+      modified: 1782697991033
+      isPrivate: false
+      description: ""
+      sortKey: -1782697991033
+    method: PUT
+    body:
+      mimeType: application/json
+      text: |-
+        {
+          "name": "string",
+          "address": "string"
+        }
+    headers:
+      - name: Content-Type
+        value: application/json
+        disabled: false
+    authentication:
+      type: apikey
+      key: access_token
+      value: "{{ _.accessToken }}"
+      addTo: cookie
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+  - url: "{{ _.base_url }}/api/warehouse/:id"
+    name: /api/warehouse/{id}
+    meta:
+      id: req_d0c8badbcce3462d9c35c43af6ee49e5
+      created: 1782697991034
+      modified: 1782697991034
+      isPrivate: false
+      description: ""
+      sortKey: -1782697991034
+    method: DELETE
+    authentication:
+      type: apikey
+      key: access_token
+      value: "{{ _.accessToken }}"
+      addTo: cookie
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+  - url: "{{ _.base_url }}/api/warehouse-policy/:warehouse"
+    name: /api/warehouse-policy/{warehouse}
+    meta:
+      id: req_c97c363b66ec4928ba83c9996e1e4eed
+      created: 1782697991043
+      modified: 1782697991043
+      isPrivate: false
+      description: ""
+      sortKey: -1782697991043
+    method: GET
+    authentication:
+      type: apikey
+      key: access_token
+      value: "{{ _.accessToken }}"
+      addTo: cookie
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+  - url: "{{ _.base_url }}/api/warehouse-policy/:warehouse"
+    name: /api/warehouse-policy/{warehouse}
+    meta:
+      id: req_926fac7517e94ad3aaf00f38274902ee
+      created: 1782697991046
+      modified: 1782697991046
+      isPrivate: false
+      description: ""
+      sortKey: -1782697991046
+    method: PUT
+    parameters:
+      - name: strategy
+        value: string
+        disabled: false
+    authentication:
+      type: apikey
+      key: access_token
+      value: "{{ _.accessToken }}"
+      addTo: cookie
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+  - url: "{{ _.base_url }}/api/reservation/release/:id"
+    name: /api/reservation/release/{id}
+    meta:
+      id: req_7bdeef3027074461b3796ffe18c95eb4
+      created: 1782697991047
+      modified: 1782697991047
+      isPrivate: false
+      description: ""
+      sortKey: -1782697991047
+    method: PUT
+    authentication:
+      type: apikey
+      key: access_token
+      value: "{{ _.accessToken }}"
+      addTo: cookie
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+  - url: "{{ _.base_url }}/api/product/activate/:id"
+    name: /api/product/activate/{id}
+    meta:
+      id: req_8937084b53eb44b8b39a621c87c517a3
+      created: 1782697991048
+      modified: 1782697991048
+      isPrivate: false
+      description: ""
+      sortKey: -1782697991048
+    method: PUT
+    authentication:
+      type: apikey
+      key: access_token
+      value: "{{ _.accessToken }}"
+      addTo: cookie
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+  - url: "{{ _.base_url }}/api/product/update/:id"
+    name: /api/product/update/{id}
+    meta:
+      id: req_9588a2d0ea934e1591b87b87c652ef2a
+      created: 1782697991048
+      modified: 1782697991048
+      isPrivate: false
+      description: ""
+      sortKey: -1782697991048
+    method: PUT
+    body:
+      mimeType: application/json
+      text: |-
+        {
+          "id": "string",
+          "sku": "string",
+          "name": "string",
+          "category": "string",
+          "minStockLevel": 0,
+          "reorderPoint": 0,
+          "weight": {
+            "value": 0,
+            "unit": "string"
+          },
+          "dimensions": {
+            "height": 0,
+            "width": 0,
+            "depth": 0,
+            "unit": "string"
+          },
+          "requirements": "string",
+          "leadTimeDays": 0,
+          "safetyStock": 0
+        }
+    headers:
+      - name: Content-Type
+        value: application/json
+        disabled: false
+    authentication:
+      type: apikey
+      key: access_token
+      value: "{{ _.accessToken }}"
+      addTo: cookie
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+  - url: "{{ _.base_url }}/api/reservation/confirm/:id"
+    name: /api/reservation/confirm/{id}
+    meta:
+      id: req_f5bb4e0e4fdf48faa42b21d15ca3c408
+      created: 1782697991048
+      modified: 1782697991048
+      isPrivate: false
+      description: ""
+      sortKey: -1782697991048
+    method: PUT
+    authentication:
+      type: apikey
+      key: access_token
+      value: "{{ _.accessToken }}"
+      addTo: cookie
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+  - url: "{{ _.base_url }}/api/warehouse"
+    name: /api/warehouse
+    meta:
+      id: req_7d8898dd63a74ed99d838c49b97262fa
+      created: 1782697991049
+      modified: 1782697991049
+      isPrivate: false
+      description: ""
+      sortKey: -1782697991049
+    method: POST
+    body:
+      mimeType: application/json
+      text: |-
+        {
+          "name": "string",
+          "address": "string"
+        }
+    headers:
+      - name: Content-Type
+        value: application/json
+        disabled: false
+    authentication:
+      type: apikey
+      key: access_token
+      value: "{{ _.accessToken }}"
+      addTo: cookie
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+  - url: "{{ _.base_url }}/api/warehouse"
+    name: /api/warehouse
+    meta:
+      id: req_f50daa017a774724a72e76192ef292c5
+      created: 1782697991049
+      modified: 1782697991049
+      isPrivate: false
+      description: ""
+      sortKey: -1782697991049
+    method: GET
+    authentication:
+      type: apikey
+      key: access_token
+      value: "{{ _.accessToken }}"
+      addTo: cookie
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+  - url: "{{ _.base_url }}/api/storage-location"
+    name: /api/storage-location
+    meta:
+      id: req_24b81cc455794e7aa8615bc220b92fb3
+      created: 1782697991050
+      modified: 1782697991050
+      isPrivate: false
+      description: ""
+      sortKey: -1782697991050
+    method: POST
+    body:
+      mimeType: application/json
+      text: |-
+        {
+          "warehouse": "string",
+          "code": "string",
+          "zone": "string",
+          "maxCapacity": 0
+        }
+    headers:
+      - name: Content-Type
+        value: application/json
+        disabled: false
+    authentication:
+      type: apikey
+      key: access_token
+      value: "{{ _.accessToken }}"
+      addTo: cookie
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+  - url: "{{ _.base_url }}/api/reservation"
+    name: /api/reservation
+    meta:
+      id: req_df9b5de4af5c4b3da9f32c99c67138e5
+      created: 1782697991050
+      modified: 1782697991050
+      isPrivate: false
+      description: ""
+      sortKey: -1782697991050
+    method: POST
+    body:
+      mimeType: application/json
+      text: |-
+        {
+          "productId": "string",
+          "warehouseId": "string",
+          "quantity": 0,
+          "expirationMinutes": 0
+        }
+    headers:
+      - name: Content-Type
+        value: application/json
+        disabled: false
+    authentication:
+      type: apikey
+      key: access_token
+      value: "{{ _.accessToken }}"
+      addTo: cookie
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+  - url: "{{ _.base_url }}/api/inventory/entry"
+    name: /api/inventory/entry
+    meta:
+      id: req_c537f27fd3094fffa5a82becc4130bf0
+      created: 1782697991051
+      modified: 1782697991051
+      isPrivate: false
+      description: ""
+      sortKey: -1782697991051
+    method: POST
+    body:
+      mimeType: application/json
+      text: |-
+        {
+          "product": "string",
+          "warehouse": "string",
+          "lotNumber": "string",
+          "quantity": 0,
+          "unitCost": 0,
+          "expirationDate": "string"
+        }
+    headers:
+      - name: Content-Type
+        value: application/json
+        disabled: false
+    authentication:
+      type: apikey
+      key: access_token
+      value: "{{ _.accessToken }}"
+      addTo: cookie
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+  - url: "{{ _.base_url }}/api/product"
+    name: /api/product
+    meta:
+      id: req_f04527a211b34e289fd78febe394ef5b
+      created: 1782697991051
+      modified: 1782697991051
+      isPrivate: false
+      description: ""
+      sortKey: -1782697991051
+    method: POST
+    body:
+      mimeType: application/json
+      text: |-
+        {
+          "sku": "string",
+          "name": "string",
+          "category": "string",
+          "minStockLevel": 0,
+          "reorderPoint": 0,
+          "weight": {
+            "value": 0,
+            "unit": "string"
+          },
+          "dimensions": {
+            "height": 0,
+            "width": 0,
+            "depth": 0,
+            "unit": "string"
+          },
+          "requirements": "string",
+          "leadTimeDays": 0,
+          "safetyStock": 0
+        }
+    headers:
+      - name: Content-Type
+        value: application/json
+        disabled: false
+    authentication:
+      type: apikey
+      key: access_token
+      value: "{{ _.accessToken }}"
+      addTo: cookie
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+  - url: "{{ _.base_url }}/api/cyclic-counts"
+    name: /api/cyclic-counts
+    meta:
+      id: req_54a073e03a7643b4a3246ad2e09895ed
+      created: 1782697991052
+      modified: 1782697991052
+      isPrivate: false
+      description: ""
+      sortKey: -1782697991052
+    method: POST
+    body:
+      mimeType: application/json
+      text: |-
+        {
+          "lot": "string"
+        }
+    headers:
+      - name: Content-Type
+        value: application/json
+        disabled: false
+    authentication:
+      type: apikey
+      key: access_token
+      value: "{{ _.accessToken }}"
+      addTo: cookie
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+  - url: "{{ _.base_url }}/api/cyclic-counts"
+    name: /api/cyclic-counts
+    meta:
+      id: req_c0ba44545e9c439baae9496a234b3531
+      created: 1782697991052
+      modified: 1782697991052
+      isPrivate: false
+      description: ""
+      sortKey: -1782697991052
+    method: GET
+    authentication:
+      type: apikey
+      key: access_token
+      value: "{{ _.accessToken }}"
+      addTo: cookie
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+  - url: "{{ _.base_url }}/api/inventory/consume"
+    name: /api/inventory/consume
+    meta:
+      id: req_dedf50edba2f4b69879907c18c51881f
+      created: 1782697991052
+      modified: 1782697991052
+      isPrivate: false
+      description: ""
+      sortKey: -1782697991052
+    method: POST
+    body:
+      mimeType: application/json
+      text: |-
+        {
+          "product": "string",
+          "warehouse": "string",
+          "quantity": 0
+        }
+    headers:
+      - name: Content-Type
+        value: application/json
+        disabled: false
+    authentication:
+      type: apikey
+      key: access_token
+      value: "{{ _.accessToken }}"
+      addTo: cookie
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+  - url: "{{ _.base_url }}/api/auth/register"
+    name: /api/auth/register
+    meta:
+      id: req_f24f82c77fd24150afc5c96f7bce8b2b
+      created: 1782697991052
+      modified: 1782697991052
+      isPrivate: false
+      description: ""
+      sortKey: -1782697991052
+    method: POST
+    body:
+      mimeType: application/json
+      text: |-
+        {
+          "username": "string",
+          "password": "string",
+          "role": "string"
+        }
+    headers:
+      - name: Content-Type
+        value: application/json
+        disabled: false
+    authentication:
+      type: apikey
+      key: access_token
+      value: "{{ _.accessToken }}"
+      addTo: cookie
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+  - url: "{{ _.base_url }}/api/auth/logout"
+    name: /api/auth/logout
+    meta:
+      id: req_9a3800f8c94a47dfa73da312651dab0b
+      created: 1782697991053
+      modified: 1782697991053
+      isPrivate: false
+      description: ""
+      sortKey: -1782697991053
+    method: POST
+    authentication:
+      type: apikey
+      key: access_token
+      value: "{{ _.accessToken }}"
+      addTo: cookie
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+  - url: "{{ _.base_url }}/api/reorder-suggestions/:id/attended"
+    name: /api/reorder-suggestions/{id}/attended
+    meta:
+      id: req_ae8c1fdeac6d4229a0ca435992027736
+      created: 1782697991053
+      modified: 1782697991053
+      isPrivate: false
+      description: ""
+      sortKey: -1782697991053
+    method: PATCH
+    authentication:
+      type: apikey
+      key: access_token
+      value: "{{ _.accessToken }}"
+      addTo: cookie
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+  - url: "{{ _.base_url }}/api/warehouse/:id/activate"
+    name: /api/warehouse/{id}/activate
+    meta:
+      id: req_c578828e96034bef86582a50c58787e6
+      created: 1782697991053
+      modified: 1782697991053
+      isPrivate: false
+      description: ""
+      sortKey: -1782697991053
+    method: PATCH
+    authentication:
+      type: apikey
+      key: access_token
+      value: "{{ _.accessToken }}"
+      addTo: cookie
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+  - url: "{{ _.base_url }}/api/auth/login"
+    name: /api/auth/login
+    meta:
+      id: req_d202c8a9664445579d7a40ed98225596
+      created: 1782697991053
+      modified: 1782697991053
+      isPrivate: false
+      description: ""
+      sortKey: -1782697991053
+    method: POST
+    body:
+      mimeType: application/json
+      text: |-
+        {
+          "username": "string",
+          "password": "string"
+        }
+    headers:
+      - name: Content-Type
+        value: application/json
+        disabled: false
+    authentication:
+      type: apikey
+      key: access_token
+      value: "{{ _.accessToken }}"
+      addTo: cookie
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+  - url: "{{ _.base_url }}/api/cyclic-counts/:id/start"
+    name: /api/cyclic-counts/{id}/start
+    meta:
+      id: req_15f55482430a46888b6ff635688ce4ed
+      created: 1782697991054
+      modified: 1782697991054
+      isPrivate: false
+      description: ""
+      sortKey: -1782697991054
+    method: PATCH
+    authentication:
+      type: apikey
+      key: access_token
+      value: "{{ _.accessToken }}"
+      addTo: cookie
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+  - url: "{{ _.base_url }}/api/cyclic-counts/:id/submit"
+    name: /api/cyclic-counts/{id}/submit
+    meta:
+      id: req_49dc0ea464544bb4b6b50fba2fa42d9b
+      created: 1782697991054
+      modified: 1782697991054
+      isPrivate: false
+      description: ""
+      sortKey: -1782697991054
+    method: PATCH
+    body:
+      mimeType: application/json
+      text: |-
+        {
+          "physicalQuantity": 0
+        }
+    headers:
+      - name: Content-Type
+        value: application/json
+        disabled: false
+    authentication:
+      type: apikey
+      key: access_token
+      value: "{{ _.accessToken }}"
+      addTo: cookie
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+  - url: "{{ _.base_url }}/api/notifications/:id/read"
+    name: /api/notifications/{id}/read
+    meta:
+      id: req_b5ad8fe93e184f07a8e36b5fb8f54607
+      created: 1782697991054
+      modified: 1782697991054
+      isPrivate: false
+      description: ""
+      sortKey: -1782697991054
+    method: PATCH
+    authentication:
+      type: apikey
+      key: access_token
+      value: "{{ _.accessToken }}"
+      addTo: cookie
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+  - url: "{{ _.base_url }}/api/storage-location/warehouse/:warehouse"
+    name: /api/storage-location/warehouse/{warehouse}
+    meta:
+      id: req_4940cc858212488a916e118592a31580
+      created: 1782697991055
+      modified: 1782697991055
+      isPrivate: false
+      description: ""
+      sortKey: -1782697991055
+    method: GET
+    authentication:
+      type: apikey
+      key: access_token
+      value: "{{ _.accessToken }}"
+      addTo: cookie
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+  - url: "{{ _.base_url }}/api/storage-location/:id"
+    name: /api/storage-location/{id}
+    meta:
+      id: req_cf13ce461f5849afa21928ff350b103d
+      created: 1782697991055
+      modified: 1782697991055
+      isPrivate: false
+      description: ""
+      sortKey: -1782697991055
+    method: GET
+    authentication:
+      type: apikey
+      key: access_token
+      value: "{{ _.accessToken }}"
+      addTo: cookie
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+  - url: "{{ _.base_url }}/api/reporting/abc"
+    name: /api/reporting/abc
+    meta:
+      id: req_ebb264ca1a854820b33b4cc5657cf9ac
+      created: 1782697991055
+      modified: 1782697991055
+      isPrivate: false
+      description: ""
+      sortKey: -1782697991055
+    method: GET
+    parameters:
+      - name: from
+        value: string
+        disabled: false
+      - name: to
+        value: string
+        disabled: false
+    authentication:
+      type: apikey
+      key: access_token
+      value: "{{ _.accessToken }}"
+      addTo: cookie
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+  - url: "{{ _.base_url }}/api/product/sku/:sku"
+    name: /api/product/sku/{sku}
+    meta:
+      id: req_3c2f125d2c574317bc6427369614247d
+      created: 1782697991056
+      modified: 1782697991056
+      isPrivate: false
+      description: ""
+      sortKey: -1782697991056
+    method: GET
+    authentication:
+      type: apikey
+      key: access_token
+      value: "{{ _.accessToken }}"
+      addTo: cookie
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+  - url: "{{ _.base_url }}/api/reorder-suggestions"
+    name: /api/reorder-suggestions
+    meta:
+      id: req_3c4286bfc2ef4aeaa0d72ca6c9269890
+      created: 1782697991056
+      modified: 1782697991056
+      isPrivate: false
+      description: ""
+      sortKey: -1782697991056
+    method: GET
+    authentication:
+      type: apikey
+      key: access_token
+      value: "{{ _.accessToken }}"
+      addTo: cookie
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+  - url: "{{ _.base_url }}/api/reorder-suggestions/pending"
+    name: /api/reorder-suggestions/pending
+    meta:
+      id: req_e52ecca211904bd1a399f9096a5a2189
+      created: 1782697991056
+      modified: 1782697991056
+      isPrivate: false
+      description: ""
+      sortKey: -1782697991056
+    method: GET
+    authentication:
+      type: apikey
+      key: access_token
+      value: "{{ _.accessToken }}"
+      addTo: cookie
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+  - url: "{{ _.base_url }}/api/product/category/:category"
+    name: /api/product/category/{category}
+    meta:
+      id: req_233c0e886cd448728256ff20db190825
+      created: 1782697991057
+      modified: 1782697991057
+      isPrivate: false
+      description: ""
+      sortKey: -1782697991057
+    method: GET
+    authentication:
+      type: apikey
+      key: access_token
+      value: "{{ _.accessToken }}"
+      addTo: cookie
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+  - url: "{{ _.base_url }}/api/notifications"
+    name: /api/notifications
+    meta:
+      id: req_4e801d84284b41a1bb70f9a3072b9455
+      created: 1782697991057
+      modified: 1782697991057
+      isPrivate: false
+      description: ""
+      sortKey: -1782697991057
+    method: GET
+    authentication:
+      type: apikey
+      key: access_token
+      value: "{{ _.accessToken }}"
+      addTo: cookie
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+  - url: "{{ _.base_url }}/api/notifications/unread"
+    name: /api/notifications/unread
+    meta:
+      id: req_751dcd56c99e434aa178721dad0b17c3
+      created: 1782697991057
+      modified: 1782697991057
+      isPrivate: false
+      description: ""
+      sortKey: -1782697991057
+    method: GET
+    authentication:
+      type: apikey
+      key: access_token
+      value: "{{ _.accessToken }}"
+      addTo: cookie
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+  - url: "{{ _.base_url }}/api/product/inactive"
+    name: /api/product/inactive
+    meta:
+      id: req_b5d4d2dcf44a48da9d52889e3c9ebf80
+      created: 1782697991057
+      modified: 1782697991057
+      isPrivate: false
+      description: ""
+      sortKey: -1782697991057
+    method: GET
+    authentication:
+      type: apikey
+      key: access_token
+      value: "{{ _.accessToken }}"
+      addTo: cookie
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+  - url: "{{ _.base_url }}/api/product/id/:id"
+    name: /api/product/id/{id}
+    meta:
+      id: req_d549fc7375da4464ae9a2870b6e3f56c
+      created: 1782697991057
+      modified: 1782697991057
+      isPrivate: false
+      description: ""
+      sortKey: -1782697991057
+    method: GET
+    authentication:
+      type: apikey
+      key: access_token
+      value: "{{ _.accessToken }}"
+      addTo: cookie
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+  - url: "{{ _.base_url }}/api/product/id/inactive/:id"
+    name: /api/product/id/inactive/{id}
+    meta:
+      id: req_e802ad49576d47e8bea0db735271146e
+      created: 1782697991057
+      modified: 1782697991057
+      isPrivate: false
+      description: ""
+      sortKey: -1782697991057
+    method: GET
+    authentication:
+      type: apikey
+      key: access_token
+      value: "{{ _.accessToken }}"
+      addTo: cookie
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+  - url: "{{ _.base_url }}/api/cyclic-counts/status/:status"
+    name: /api/cyclic-counts/status/{status}
+    meta:
+      id: req_741d171ab6e64a5dbfabed952c8378d4
+      created: 1782697991058
+      modified: 1782697991058
+      isPrivate: false
+      description: ""
+      sortKey: -1782697991058
+    method: GET
+    authentication:
+      type: apikey
+      key: access_token
+      value: "{{ _.accessToken }}"
+      addTo: cookie
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+  - url: "{{ _.base_url }}/api/product/delete/:id"
+    name: /api/product/delete/{id}
+    meta:
+      id: req_8d005e7b5dce442d8e4d87bb04f92ad6
+      created: 1782697991058
+      modified: 1782697991058
+      isPrivate: false
+      description: ""
+      sortKey: -1782697991058
+    method: DELETE
+    authentication:
+      type: apikey
+      key: access_token
+      value: "{{ _.accessToken }}"
+      addTo: cookie
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+  - url: "{{ _.base_url }}/api/notifications/active"
+    name: /api/notifications/active
+    meta:
+      id: req_d40ab1b19846455fb0b086cff61ca9cc
+      created: 1782697991058
+      modified: 1782697991058
+      isPrivate: false
+      description: ""
+      sortKey: -1782697991058
+    method: GET
+    authentication:
+      type: apikey
+      key: access_token
+      value: "{{ _.accessToken }}"
+      addTo: cookie
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+cookieJar:
+  name: Default Jar
+  meta:
+    id: jar_8fb34721c3ab14c4ed0e8ff3413240a908aa2c4f
+    created: 1782697991316
+    modified: 1782697991316
+environments:
+  name: Base environment
+  meta:
+    id: env_7d0edc0369934992b4a9acda3b1a4bc6
+    created: 1782697991028
+    modified: 1782697991028
+    isPrivate: false
+  data:
+    base_url: "{{ _.scheme }}://{{ _.host }}{{ _.base_path }}"
+  subEnvironments:
+    - name: OpenAPI env localhost:8080
+      meta:
+        id: env_b34efab4aa0a49b49d9937fe8d8ed636
+        created: 1782697991030
+        modified: 1782697991030
+        isPrivate: false
+        sortKey: 1782697991030
+      data:
+        scheme: http
+        base_path: ""
+        host: localhost:8080
+        accessToken: accessToken
+spec:
+  contents:
+    openapi: 3.1.0
+    info:
+      title: Warehouse Inventory API
+      description: Sistema de inventario multi-almacén con gestión de productos, lotes
+        FIFO, ubicaciones y órdenes
+      contact:
+        name: Warehouse team
+      version: 1.0.0
+    servers:
+      - url: http://localhost:8080
+        description: Generated server url
+    paths:
+      /api/warehouse/{id}:
+        get:
+          tags:
+            - warehouse-controller
+          operationId: getById
+          parameters:
+            - name: id
+              in: path
+              required: true
+              schema:
+                type: string
+                format: uuid
+          responses:
+            "200":
+              description: OK
+              content:
+                "*/*":
+                  schema:
+                    $ref: "#/components/schemas/GeneralResponse"
+        put:
+          tags:
+            - warehouse-controller
+          operationId: update
+          parameters:
+            - name: id
+              in: path
+              required: true
+              schema:
+                type: string
+                format: uuid
+          requestBody:
+            content:
+              application/json:
+                schema:
+                  $ref: "#/components/schemas/UpdateWarehouseRequest"
+            required: true
+          responses:
+            "200":
+              description: OK
+              content:
+                "*/*":
+                  schema:
+                    $ref: "#/components/schemas/GeneralResponse"
+        delete:
+          tags:
+            - warehouse-controller
+          operationId: deactivate
+          parameters:
+            - name: id
+              in: path
+              required: true
+              schema:
+                type: string
+                format: uuid
+          responses:
+            "200":
+              description: OK
+              content:
+                "*/*":
+                  schema:
+                    $ref: "#/components/schemas/GeneralResponse"
+      /api/warehouse-policy/{warehouse}:
+        get:
+          tags:
+            - warehouse-policy-controller
+          operationId: getPolicy
+          parameters:
+            - name: warehouse
+              in: path
+              required: true
+              schema:
+                type: string
+                format: uuid
+          responses:
+            "200":
+              description: OK
+              content:
+                "*/*":
+                  schema:
+                    $ref: "#/components/schemas/GeneralResponse"
+        put:
+          tags:
+            - warehouse-policy-controller
+          operationId: setStrategy
+          parameters:
+            - name: warehouse
+              in: path
+              required: true
+              schema:
+                type: string
+                format: uuid
+            - name: strategy
+              in: query
+              required: true
+              schema:
+                type: string
+                enum:
+                  - NEAREST_EXIT
+                  - AISLE_FILL
+                  - ZONE_BASED
+                  - SEASONAL_PROXIMITY
+                  - RANDOM
+          responses:
+            "200":
+              description: OK
+              content:
+                "*/*":
+                  schema:
+                    $ref: "#/components/schemas/GeneralResponse"
+      /api/reservation/release/{id}:
+        put:
+          tags:
+            - reservation-controller
+          operationId: releaseReservation
+          parameters:
+            - name: id
+              in: path
+              required: true
+              schema:
+                type: string
+                format: uuid
+          responses:
+            "200":
+              description: OK
+              content:
+                "*/*":
+                  schema:
+                    $ref: "#/components/schemas/GeneralResponse"
+      /api/reservation/confirm/{id}:
+        put:
+          tags:
+            - reservation-controller
+          operationId: confirmReservation
+          parameters:
+            - name: id
+              in: path
+              required: true
+              schema:
+                type: string
+                format: uuid
+          responses:
+            "200":
+              description: OK
+              content:
+                "*/*":
+                  schema:
+                    $ref: "#/components/schemas/GeneralResponse"
+      /api/product/update/{id}:
+        put:
+          tags:
+            - product-controller
+          operationId: updateProduct
+          parameters:
+            - name: id
+              in: path
+              required: true
+              schema:
+                type: string
+                format: uuid
+          requestBody:
+            content:
+              application/json:
+                schema:
+                  $ref: "#/components/schemas/UpdateProductRequest"
+            required: true
+          responses:
+            "200":
+              description: OK
+              content:
+                "*/*":
+                  schema:
+                    $ref: "#/components/schemas/GeneralResponse"
+      /api/product/activate/{id}:
+        put:
+          tags:
+            - product-controller
+          operationId: activateProduct
+          parameters:
+            - name: id
+              in: path
+              required: true
+              schema:
+                type: string
+                format: uuid
+          responses:
+            "200":
+              description: OK
+              content:
+                "*/*":
+                  schema:
+                    $ref: "#/components/schemas/GeneralResponse"
+      /api/warehouse:
+        get:
+          tags:
+            - warehouse-controller
+          operationId: getAll
+          responses:
+            "200":
+              description: OK
+              content:
+                "*/*":
+                  schema:
+                    $ref: "#/components/schemas/GeneralResponse"
+        post:
+          tags:
+            - warehouse-controller
+          operationId: create
+          requestBody:
+            content:
+              application/json:
+                schema:
+                  $ref: "#/components/schemas/CreateWarehouseRequest"
+            required: true
+          responses:
+            "200":
+              description: OK
+              content:
+                "*/*":
+                  schema:
+                    $ref: "#/components/schemas/GeneralResponse"
+      /api/storage-location:
+        post:
+          tags:
+            - storage-location-controller
+          operationId: create_1
+          requestBody:
+            content:
+              application/json:
+                schema:
+                  $ref: "#/components/schemas/CreateStorageLocationRequest"
+            required: true
+          responses:
+            "200":
+              description: OK
+              content:
+                "*/*":
+                  schema:
+                    $ref: "#/components/schemas/GeneralResponse"
+      /api/reservation:
+        post:
+          tags:
+            - reservation-controller
+          operationId: createReservation
+          requestBody:
+            content:
+              application/json:
+                schema:
+                  $ref: "#/components/schemas/ReservationRequest"
+            required: true
+          responses:
+            "200":
+              description: OK
+              content:
+                "*/*":
+                  schema:
+                    $ref: "#/components/schemas/GeneralResponse"
+      /api/product:
+        post:
+          tags:
+            - product-controller
+          operationId: createProduct
+          requestBody:
+            content:
+              application/json:
+                schema:
+                  $ref: "#/components/schemas/CreateProductRequest"
+            required: true
+          responses:
+            "200":
+              description: OK
+              content:
+                "*/*":
+                  schema:
+                    $ref: "#/components/schemas/GeneralResponse"
+      /api/inventory/entry:
+        post:
+          tags:
+            - inventory-controller
+          operationId: registerEntry
+          requestBody:
+            content:
+              application/json:
+                schema:
+                  $ref: "#/components/schemas/InventoryEntryRequest"
+            required: true
+          responses:
+            "200":
+              description: OK
+              content:
+                "*/*":
+                  schema:
+                    $ref: "#/components/schemas/GeneralResponse"
+      /api/inventory/consume:
+        post:
+          tags:
+            - inventory-controller
+          operationId: consumeStock
+          requestBody:
+            content:
+              application/json:
+                schema:
+                  $ref: "#/components/schemas/StockConsumptionRequest"
+            required: true
+          responses:
+            "200":
+              description: OK
+              content:
+                "*/*":
+                  schema:
+                    $ref: "#/components/schemas/GeneralResponse"
+      /api/cyclic-counts:
+        get:
+          tags:
+            - cyclic-count-controller
+          operationId: getAll_1
+          responses:
+            "200":
+              description: OK
+              content:
+                "*/*":
+                  schema:
+                    $ref: "#/components/schemas/GeneralResponse"
+        post:
+          tags:
+            - cyclic-count-controller
+          operationId: create_2
+          requestBody:
+            content:
+              application/json:
+                schema:
+                  $ref: "#/components/schemas/CreateCyclicCountRequest"
+            required: true
+          responses:
+            "200":
+              description: OK
+              content:
+                "*/*":
+                  schema:
+                    $ref: "#/components/schemas/GeneralResponse"
+      /api/auth/register:
+        post:
+          tags:
+            - auth-controller
+          operationId: register
+          requestBody:
+            content:
+              application/json:
+                schema:
+                  $ref: "#/components/schemas/RegisterRequest"
+            required: true
+          responses:
+            "200":
+              description: OK
+              content:
+                "*/*":
+                  schema:
+                    $ref: "#/components/schemas/GeneralResponse"
+      /api/auth/logout:
+        post:
+          tags:
+            - auth-controller
+          operationId: logout
+          responses:
+            "200":
+              description: OK
+              content:
+                "*/*":
+                  schema:
+                    $ref: "#/components/schemas/GeneralResponse"
+      /api/auth/login:
+        post:
+          tags:
+            - auth-controller
+          operationId: login
+          requestBody:
+            content:
+              application/json:
+                schema:
+                  $ref: "#/components/schemas/LoginRequest"
+            required: true
+          responses:
+            "200":
+              description: OK
+              content:
+                "*/*":
+                  schema:
+                    $ref: "#/components/schemas/GeneralResponse"
+      /api/warehouse/{id}/activate:
+        patch:
+          tags:
+            - warehouse-controller
+          operationId: activate
+          parameters:
+            - name: id
+              in: path
+              required: true
+              schema:
+                type: string
+                format: uuid
+          responses:
+            "200":
+              description: OK
+              content:
+                "*/*":
+                  schema:
+                    $ref: "#/components/schemas/GeneralResponse"
+      /api/reorder-suggestions/{id}/attended:
+        patch:
+          tags:
+            - reorder-suggestion-controller
+          operationId: markAsAttended
+          parameters:
+            - name: id
+              in: path
+              required: true
+              schema:
+                type: string
+                format: uuid
+          responses:
+            "200":
+              description: OK
+              content:
+                "*/*":
+                  schema:
+                    $ref: "#/components/schemas/GeneralResponse"
+      /api/notifications/{id}/read:
+        patch:
+          tags:
+            - notification-controller
+          operationId: markAsRead
+          parameters:
+            - name: id
+              in: path
+              required: true
+              schema:
+                type: string
+                format: uuid
+          responses:
+            "200":
+              description: OK
+              content:
+                "*/*":
+                  schema:
+                    $ref: "#/components/schemas/GeneralResponse"
+      /api/cyclic-counts/{id}/submit:
+        patch:
+          tags:
+            - cyclic-count-controller
+          operationId: submit
+          parameters:
+            - name: id
+              in: path
+              required: true
+              schema:
+                type: string
+                format: uuid
+          requestBody:
+            content:
+              application/json:
+                schema:
+                  $ref: "#/components/schemas/SubmitPhysicalCountRequest"
+            required: true
+          responses:
+            "200":
+              description: OK
+              content:
+                "*/*":
+                  schema:
+                    $ref: "#/components/schemas/GeneralResponse"
+      /api/cyclic-counts/{id}/start:
+        patch:
+          tags:
+            - cyclic-count-controller
+          operationId: start
+          parameters:
+            - name: id
+              in: path
+              required: true
+              schema:
+                type: string
+                format: uuid
+          responses:
+            "200":
+              description: OK
+              content:
+                "*/*":
+                  schema:
+                    $ref: "#/components/schemas/GeneralResponse"
+      /api/storage-location/{id}:
+        get:
+          tags:
+            - storage-location-controller
+          operationId: getById_1
+          parameters:
+            - name: id
+              in: path
+              required: true
+              schema:
+                type: string
+                format: uuid
+          responses:
+            "200":
+              description: OK
+              content:
+                "*/*":
+                  schema:
+                    $ref: "#/components/schemas/GeneralResponse"
+      /api/storage-location/warehouse/{warehouse}:
+        get:
+          tags:
+            - storage-location-controller
+          operationId: getByWarehouse
+          parameters:
+            - name: warehouse
+              in: path
+              required: true
+              schema:
+                type: string
+                format: uuid
+          responses:
+            "200":
+              description: OK
+              content:
+                "*/*":
+                  schema:
+                    $ref: "#/components/schemas/GeneralResponse"
+      /api/reporting/abc:
+        get:
+          tags:
+            - abc-report-controller
+          operationId: getAbcReport
+          parameters:
+            - name: from
+              in: query
+              required: true
+              schema:
+                type: string
+                format: date
+            - name: to
+              in: query
+              required: true
+              schema:
+                type: string
+                format: date
+          responses:
+            "200":
+              description: OK
+              content:
+                "*/*":
+                  schema:
+                    $ref: "#/components/schemas/GeneralResponse"
+      /api/reorder-suggestions:
+        get:
+          tags:
+            - reorder-suggestion-controller
+          operationId: getAll_2
+          responses:
+            "200":
+              description: OK
+              content:
+                "*/*":
+                  schema:
+                    $ref: "#/components/schemas/GeneralResponse"
+      /api/reorder-suggestions/pending:
+        get:
+          tags:
+            - reorder-suggestion-controller
+          operationId: getPending
+          responses:
+            "200":
+              description: OK
+              content:
+                "*/*":
+                  schema:
+                    $ref: "#/components/schemas/GeneralResponse"
+      /api/product/sku/{sku}:
+        get:
+          tags:
+            - product-controller
+          operationId: getProductBySku
+          parameters:
+            - name: sku
+              in: path
+              required: true
+              schema:
+                type: string
+          responses:
+            "200":
+              description: OK
+              content:
+                "*/*":
+                  schema:
+                    $ref: "#/components/schemas/GeneralResponse"
+      /api/product/inactive:
+        get:
+          tags:
+            - product-controller
+          operationId: getAllProducts
+          responses:
+            "200":
+              description: OK
+              content:
+                "*/*":
+                  schema:
+                    $ref: "#/components/schemas/GeneralResponse"
+      /api/product/id/{id}:
+        get:
+          tags:
+            - product-controller
+          operationId: getProductById
+          parameters:
+            - name: id
+              in: path
+              required: true
+              schema:
+                type: string
+                format: uuid
+          responses:
+            "200":
+              description: OK
+              content:
+                "*/*":
+                  schema:
+                    $ref: "#/components/schemas/GeneralResponse"
+      /api/product/id/inactive/{id}:
+        get:
+          tags:
+            - product-controller
+          operationId: getInactiveProductById
+          parameters:
+            - name: id
+              in: path
+              required: true
+              schema:
+                type: string
+                format: uuid
+          responses:
+            "200":
+              description: OK
+              content:
+                "*/*":
+                  schema:
+                    $ref: "#/components/schemas/GeneralResponse"
+      /api/product/category/{category}:
+        get:
+          tags:
+            - product-controller
+          operationId: getProductsByCategory
+          parameters:
+            - name: category
+              in: path
+              required: true
+              schema:
+                type: string
+                enum:
+                  - FOOD_PERISHABLE
+                  - FOOD_NON_PERISHABLE
+                  - BEVERAGES
+                  - FROZEN
+                  - PHARMACEUTICAL
+                  - MEDICAL_DEVICES
+                  - SUPPLEMENTS
+                  - PERSONAL_CARE
+                  - CLEANING_SUPPLIES
+                  - HOME_GOODS
+                  - ELECTRONICS
+                  - COMPONENTS
+                  - ACCESSORIES
+                  - APPAREL
+                  - FOOTWEAR
+                  - TEXTILES
+                  - RAW_MATERIALS
+                  - MACHINERY_PARTS
+                  - TOOLS
+                  - CHEMICALS
+                  - OFFICE_SUPPLIES
+                  - SEASONAL
+                  - PROMOTIONAL
+                  - OTHER
+          responses:
+            "200":
+              description: OK
+              content:
+                "*/*":
+                  schema:
+                    $ref: "#/components/schemas/GeneralResponse"
+      /api/notifications:
+        get:
+          tags:
+            - notification-controller
+          operationId: getAll_3
+          responses:
+            "200":
+              description: OK
+              content:
+                "*/*":
+                  schema:
+                    $ref: "#/components/schemas/GeneralResponse"
+      /api/notifications/unread:
+        get:
+          tags:
+            - notification-controller
+          operationId: getUnread
+          responses:
+            "200":
+              description: OK
+              content:
+                "*/*":
+                  schema:
+                    $ref: "#/components/schemas/GeneralResponse"
+      /api/notifications/active:
+        get:
+          tags:
+            - notification-controller
+          operationId: getActive
+          responses:
+            "200":
+              description: OK
+              content:
+                "*/*":
+                  schema:
+                    $ref: "#/components/schemas/GeneralResponse"
+      /api/cyclic-counts/status/{status}:
+        get:
+          tags:
+            - cyclic-count-controller
+          operationId: getByStatus
+          parameters:
+            - name: status
+              in: path
+              required: true
+              schema:
+                type: string
+                enum:
+                  - PENDING
+                  - IN_PROGRESS
+                  - ADJUSTED
+          responses:
+            "200":
+              description: OK
+              content:
+                "*/*":
+                  schema:
+                    $ref: "#/components/schemas/GeneralResponse"
+      /api/product/delete/{id}:
+        delete:
+          tags:
+            - product-controller
+          operationId: deactivateProduct
+          parameters:
+            - name: id
+              in: path
+              required: true
+              schema:
+                type: string
+                format: uuid
+          responses:
+            "200":
+              description: OK
+              content:
+                "*/*":
+                  schema:
+                    $ref: "#/components/schemas/GeneralResponse"
+    components:
+      schemas:
+        UpdateWarehouseRequest:
+          type: object
+          properties:
+            name:
+              type: string
+              minLength: 1
+            address:
+              type: string
+              minLength: 1
+          required:
+            - address
+            - name
+        GeneralResponse:
+          type: object
+          properties:
+            uri:
+              type: string
+            message:
+              type: string
+            status:
+              type: integer
+              format: int32
+            time:
+              type: string
+              format: date-time
+        Dimensions:
+          type: object
+          properties:
+            height:
+              type: number
+            width:
+              type: number
+            depth:
+              type: number
+            unit:
+              type: string
+              enum:
+                - CM
+                - MM
+                - IN
+                - M
+        UpdateProductRequest:
+          type: object
+          properties:
+            id:
+              type: string
+              format: uuid
+            sku:
+              type: string
+              minLength: 1
+            name:
+              type: string
+              minLength: 1
+            category:
+              type: string
+              enum:
+                - FOOD_PERISHABLE
+                - FOOD_NON_PERISHABLE
+                - BEVERAGES
+                - FROZEN
+                - PHARMACEUTICAL
+                - MEDICAL_DEVICES
+                - SUPPLEMENTS
+                - PERSONAL_CARE
+                - CLEANING_SUPPLIES
+                - HOME_GOODS
+                - ELECTRONICS
+                - COMPONENTS
+                - ACCESSORIES
+                - APPAREL
+                - FOOTWEAR
+                - TEXTILES
+                - RAW_MATERIALS
+                - MACHINERY_PARTS
+                - TOOLS
+                - CHEMICALS
+                - OFFICE_SUPPLIES
+                - SEASONAL
+                - PROMOTIONAL
+                - OTHER
+            minStockLevel:
+              type: integer
+              format: int32
+            reorderPoint:
+              type: integer
+              format: int32
+            weight:
+              $ref: "#/components/schemas/Weight"
+            dimensions:
+              $ref: "#/components/schemas/Dimensions"
+            requirements:
+              type: string
+              enum:
+                - AMBIENT
+                - REFRIGERATED
+                - FROZEN
+                - CONTROLLED_TEMP
+                - DRY
+                - HAZARDOUS
+                - HIGH_SECURITY
+                - FLAMMABLE
+                - FRAGILE
+                - OVERSIZED
+            leadTimeDays:
+              type: integer
+              format: int32
+            safetyStock:
+              type: integer
+              format: int32
+          required:
+            - category
+            - dimensions
+            - id
+            - leadTimeDays
+            - minStockLevel
+            - name
+            - reorderPoint
+            - requirements
+            - safetyStock
+            - sku
+            - weight
+        Weight:
+          type: object
+          properties:
+            value:
+              type: number
+            unit:
+              type: string
+              enum:
+                - KG
+                - LBS
+                - OZ
+                - G
+        CreateWarehouseRequest:
+          type: object
+          properties:
+            name:
+              type: string
+              minLength: 1
+            address:
+              type: string
+              minLength: 1
+          required:
+            - address
+            - name
+        CreateStorageLocationRequest:
+          type: object
+          properties:
+            warehouse:
+              type: string
+              format: uuid
+            code:
+              type: string
+              minLength: 1
+            zone:
+              type: string
+              minLength: 1
+            maxCapacity:
+              type: integer
+              format: int32
+          required:
+            - code
+            - maxCapacity
+            - warehouse
+            - zone
+        ReservationRequest:
+          type: object
+          properties:
+            productId:
+              type: string
+              format: uuid
+            warehouseId:
+              type: string
+              format: uuid
+            quantity:
+              type: integer
+              format: int32
+            expirationMinutes:
+              type: integer
+              format: int32
+          required:
+            - expirationMinutes
+            - productId
+            - quantity
+            - warehouseId
+        CreateProductRequest:
+          type: object
+          properties:
+            sku:
+              type: string
+              minLength: 1
+            name:
+              type: string
+              minLength: 1
+            category:
+              type: string
+              enum:
+                - FOOD_PERISHABLE
+                - FOOD_NON_PERISHABLE
+                - BEVERAGES
+                - FROZEN
+                - PHARMACEUTICAL
+                - MEDICAL_DEVICES
+                - SUPPLEMENTS
+                - PERSONAL_CARE
+                - CLEANING_SUPPLIES
+                - HOME_GOODS
+                - ELECTRONICS
+                - COMPONENTS
+                - ACCESSORIES
+                - APPAREL
+                - FOOTWEAR
+                - TEXTILES
+                - RAW_MATERIALS
+                - MACHINERY_PARTS
+                - TOOLS
+                - CHEMICALS
+                - OFFICE_SUPPLIES
+                - SEASONAL
+                - PROMOTIONAL
+                - OTHER
+            minStockLevel:
+              type: integer
+              format: int32
+            reorderPoint:
+              type: integer
+              format: int32
+            weight:
+              $ref: "#/components/schemas/Weight"
+            dimensions:
+              $ref: "#/components/schemas/Dimensions"
+            requirements:
+              type: string
+              enum:
+                - AMBIENT
+                - REFRIGERATED
+                - FROZEN
+                - CONTROLLED_TEMP
+                - DRY
+                - HAZARDOUS
+                - HIGH_SECURITY
+                - FLAMMABLE
+                - FRAGILE
+                - OVERSIZED
+            leadTimeDays:
+              type: integer
+              format: int32
+            safetyStock:
+              type: integer
+              format: int32
+          required:
+            - category
+            - dimensions
+            - leadTimeDays
+            - minStockLevel
+            - name
+            - reorderPoint
+            - requirements
+            - safetyStock
+            - sku
+            - weight
+        InventoryEntryRequest:
+          type: object
+          properties:
+            product:
+              type: string
+              format: uuid
+            warehouse:
+              type: string
+              format: uuid
+            lotNumber:
+              type: string
+            quantity:
+              type: integer
+              format: int32
+            unitCost:
+              type: number
+            expirationDate:
+              type: string
+              format: date
+          required:
+            - lotNumber
+            - product
+            - quantity
+            - unitCost
+            - warehouse
+        StockConsumptionRequest:
+          type: object
+          properties:
+            product:
+              type: string
+              format: uuid
+            warehouse:
+              type: string
+              format: uuid
+            quantity:
+              type: integer
+              format: int32
+          required:
+            - product
+            - quantity
+            - warehouse
+        CreateCyclicCountRequest:
+          type: object
+          properties:
+            lot:
+              type: string
+              format: uuid
+          required:
+            - lot
+        RegisterRequest:
+          type: object
+          properties:
+            username:
+              type: string
+              minLength: 1
+            password:
+              type: string
+              minLength: 1
+            role:
+              type: string
+              enum:
+                - ADMIN
+                - WAREHOUSE_MANAGER
+                - OPERATOR
+          required:
+            - password
+            - role
+            - username
+        LoginRequest:
+          type: object
+          properties:
+            username:
+              type: string
+              minLength: 1
+            password:
+              type: string
+              minLength: 1
+          required:
+            - password
+            - username
+        SubmitPhysicalCountRequest:
+          type: object
+          properties:
+            physicalQuantity:
+              type: integer
+              format: int32
+          required:
+            - physicalQuantity
+      securitySchemes:
+        cookieAuth:
+          type: apiKey
+          name: access_token
+          in: cookie
+  meta:
+    id: spc_2e5d43d36ef147deb0a8a7fa7c2fd670
+    created: 1782697991026
+    modified: 1782697991027
